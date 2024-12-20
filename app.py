@@ -19,15 +19,35 @@ def extract_text_from_pdf(pdf_file):
     return text
 
 # function to process text with OpenAI LLM
-def process_text_with_llm(text, model="text-davunci-003"):
+def process_text_with_llm(text, task="Summarize", style="Bullet Points", temperature=0.7):
+    task_templates = {
+        "Summarize":{
+            "Bullet Points": "Summarize the text into concise bullet points.",
+            "Narrative": "Summarize the text in a narrative format.",
+            "Abstract": "Provide an abstract-like summary of the text."
+        },
+        "Keywords": "Extrace the main keywords from the following text.",
+        "Q&A": "Based on the following text, answer the question."
+    }
+
+    if task == "Summarize":
+        prompt = f"{task_templates[task][style]}\n\nText:\n{text}"
+    elif task == "keywords":
+        prompt = f"{task_templates[task]}\n\nText:\n{text}"
+    else:
+        question = st.text_input("Enter your qeustion:")
+        prompt = f"{task_templates[task]}\n\nQuestion:{question}\n\nText:\n{text}"
+    
+    messages=[
+            {"role": "system", "content": "You are a highly skilled assistant specializing in text processing."},
+            {"role": "user", "content": prompt}
+        ]
+
     response = openai.chat.completions.create(
-        model="gpt-4",
-        messages=[
-            {"role": "system", "content": "You are a helpful assistant"},
-            {"role": "user", "content": f"Summarize this text:\n\n{text}"}
-        ],
+        model="gpt-4o-mini",
+        messages=messages,
         max_tokens=2000,
-        temperature=0.7,
+        temperature=temperature,
     )
     return response.choices[0].message.content.strip()
 
