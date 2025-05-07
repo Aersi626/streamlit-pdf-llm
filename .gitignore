@@ -7,3 +7,7 @@ venv/
 
 # Streamlit secrets
 .streamlit/secrets.toml
+
+data/
+
+models/
