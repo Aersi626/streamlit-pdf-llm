@@ -21,6 +21,11 @@ This app extracts text from PDFs and processes it using OpenAI's language models
     ```bash
     pip install -r requirements.txt
 
-4. Run the app:
+4. Ollama server
     ```bash
-    streamlit run app.py
+    ollama pull llama3
+    ollama serve
+
+5. Run the app:
+    ```bash
+    streamlit run app/ui.py
