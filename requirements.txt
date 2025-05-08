@@ -2,5 +2,7 @@ streamlit
 langchain-community
 ollama
 faiss-cpu
-pypdf
 langchain_ollama
+sentence_transformers
+pdfplumber
+torch
