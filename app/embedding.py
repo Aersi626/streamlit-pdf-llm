@@ -3,7 +3,7 @@ from typing import List
 import torch
 
 class BGE_Embedding:
-    def __init__(self, model_name="hkunlp/instructor-xl"):
+    def __init__(self, model_name="BAAI/bge-large-en"):
         self.model = SentenceTransformer(model_name, device="cuda" if torch.cuda.is_available() else "cpu")
         self.model_name = model_name
         if "instructor" in model_name.lower():

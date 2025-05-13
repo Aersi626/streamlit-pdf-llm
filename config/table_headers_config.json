@@ -1,0 +1,10 @@
+{
+  "8.1.1": ["Parameter", "Description", "Range", "Resolution", "Typical value"],
+  "8.1.2": ["Parameter", "Description", "Range", "Resolution", "Typical value"],
+  "8.1.3": ["ID", "Name", "Device ID"],
+  "8.2": ["ID", "Name", "Type", "Unit", "Min", "Max", "Description"],
+  "8.3": ["ID", "Name", "Type", "Unit", "Min", "Max", "Description"],
+  "8.4": ["ID", "Name", "Type", "Unit", "Min", "Max", "Default", "Description"],
+  "8.5": ["ID", "Name", "Set CE", "Clear CE", "Text"],
+  "8.6": ["ID", "Name", "Description", "Associated DVs"]
+}

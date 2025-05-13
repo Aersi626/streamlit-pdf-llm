@@ -6,16 +6,18 @@ import pdfplumber
 import os
 import pandas as pd
 
-def chunk_table(df: pd.DataFrame, page_num: int, table_num: int, chunk_size: int = 200) -> list[str]:
+def chunk_table(df: pd.DataFrame, page_num: int, table_num: int, table_caption: str, chunk_size: int = 200) -> list[str]:
     """
     Splits a DataFrame into markdown chunks with repeated headers.
     """
     chunks = []
     total_rows = len(df)
+
     for start in range(0, total_rows, chunk_size):
         chunk_df = df.iloc[start:start + chunk_size].reset_index(drop=True)
-        hybrid_chunk = format_table_as_markdown_json_hybrid(chunk_df, page_num=page_num, table_num=table_num)
-        chunks.append(hybrid_chunk)
+        chunk_text = format_table_as_markdown_json_hybrid(chunk_df, page_num, table_num, table_caption)
+        chunks.append(chunk_text)
+
     return chunks
 
 def load_and_split_pdf(pdf_path: str) -> list[Document]:
@@ -39,8 +41,8 @@ def load_and_split_pdf(pdf_path: str) -> list[Document]:
 
     # Add chunked tables as separate documents
     tables = extract_tables_from_pdf(pdf_path)
-    for df, page_num, table_num in tables:
-        table_chunks = chunk_table(df, page_num=page_num, table_num=table_num, chunk_size=200)
+    for df, page_num, table_num, table_caption in tables:
+        table_chunks = chunk_table(df, page_num=page_num, table_num=table_num, table_caption=table_caption, chunk_size=200)
         for chunk_idx, chunk_text in enumerate(table_chunks, start=1):
             documents.append(Document(
                 page_content=chunk_text,
@@ -49,6 +51,7 @@ def load_and_split_pdf(pdf_path: str) -> list[Document]:
                     "page": page_num,
                     "table": table_num,
                     "chunk": chunk_idx,
+                    "caption": table_caption,
                     "type": "table"
                 }
             ))

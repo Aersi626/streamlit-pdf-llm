@@ -1,30 +1,118 @@
 import pdfplumber
 import pandas as pd
 from typing import List, Tuple
+import re
+import json
+import os
 
-def extract_tables_from_pdf(pdf_path: str) -> List[Tuple[pd.DataFrame, int, int]]:
+config_path = os.path.join(os.path.dirname(__file__), "../config/table_headers_config.json")
+with open(os.path.abspath(config_path), "r", encoding="utf-8") as f:
+    HEADER_CONFIG = json.load(f)
+
+def extract_section_key(caption: str) -> str:
+    match = re.match(r"(\d+(?:\.\d+){0,2})", caption)
+    return match.group(1) if match else ""
+
+def fix_multirow_header(rows: list[list[str]], expected_min_cols: int = 4, max_rows: int = 3) -> tuple[list[str], list[list[str]]]:
     """
-    Extract tables from a PDF as a list of (DataFrame, page_num, table_num) tuples.
+    Combine multiple header rows into a single row if the first row appears malformed.
+    Returns: (fixed_header, remaining_rows)
+    """
+    header_candidate = rows[:max_rows]
+    num_cols = max(len(row) for row in header_candidate)
 
-    Args:
-        pdf_path (str): Path to the PDF file.
+    # Combine headers
+    combined = ['' for _ in range(num_cols)]
+    for row in header_candidate:
+        for i in range(len(row)):
+            val = (row[i] or "").strip()
+            if val:
+                combined[i] += (" " + val).strip() if combined[i] else val
 
-    Returns:
-        List of tuples containing:
-            - DataFrame of the table
-            - Page number
-            - Table number on that page
+    cleaned_header = [h.strip() for h in combined if h.strip()]
+
+    # Sanity check: return combined header only if it's clearly more structured
+    if len(cleaned_header) >= expected_min_cols:
+        return cleaned_header, rows[max_rows:]
+    else:
+        return rows[0], rows[1:]
+
+def extract_tables_from_pdf(pdf_path: str) -> List[Tuple[pd.DataFrame, int, int, str]]:
+    """
+    Extracts tables and assigns them to the most recent section heading.
+    Returns list of (DataFrame, start_page_num, table_index, section_heading).
     """
     tables = []
+    current_caption = None
+    current_header = None
+    current_rows = []
+    current_col_count = None
+    start_page = None
+    table_index = 0
+
+    # Match patterns like "8.3 Status Variables", "10 Equipment Constants"
+    section_heading_pattern = re.compile(
+    r"^(\d+(?:\.\d+){0,2})\s+([A-Z][\w\-]*(?:\s+[a-zA-Z][\w\-]*){0,5})",
+    re.MULTILINE)
+
     with pdfplumber.open(pdf_path) as pdf:
         for page_num, page in enumerate(pdf.pages, start=1):
+            text = page.extract_text() or ""
+            section_matches = section_heading_pattern.findall(text)
+
+            # Use the last matched section heading on the page (if any)
+            # Rebuild full captions like "8.3 Status Variables"
+            captions = [f"{sec_num} {title}".strip() for sec_num, title in section_matches]
+            section_caption = captions[-1] if captions else current_caption  # fallback to last used
+
             page_tables = page.extract_tables()
-            for table_num, table in enumerate(page_tables, start=1):
-                try:
-                    df = pd.DataFrame(table[1:], columns=table[0])
-                    tables.append((df, page_num, table_num))
-                except Exception as e:
-                    print(f"⚠️ Failed to parse table on page {page_num}, table {table_num}: {e}")
+            for table in page_tables:
+                if not table or len(table) < 2:
+                    continue
+
+                section_key = extract_section_key(section_caption or "")
+                known_header = HEADER_CONFIG.get(section_key)
+                print(f"Section Key: {section_key}, Known Header: {known_header}")
+
+                if known_header:
+                    maybe_header = known_header
+                    rest_rows = table  # use entire table as body
+                    print(f"⚠️ Using known header for section {section_key}: {maybe_header}")
+                else:
+                    if len([c for c in table[0] if c and c.strip()]) < 3:
+                        maybe_header, rest_rows = fix_multirow_header(table)
+                    else:
+                        maybe_header = table[0]
+                        rest_rows = table[1:]
+
+                if section_caption != current_caption:
+                    for i, row in enumerate(current_rows):
+                        if len(row) != len(current_header):
+                            print(f"⚠️ Skipping malformed row at table {table_index}, page {start_page}: {row} {len(row)} {current_header} {len(current_header)}")
+                    # New section detected — finalize previous table
+                    cleaned_rows = [row for row in current_rows if len(row) == len(current_header)]
+                    if cleaned_rows:
+                        df = pd.DataFrame(cleaned_rows, columns=current_header)
+                        tables.append((df, start_page, table_index, current_caption))
+                        table_index += 1
+
+                    # Start a new table group
+                    current_caption = section_caption
+                    current_header = maybe_header
+                    current_rows = rest_rows
+                    current_col_count = len(maybe_header)
+                    start_page = page_num
+                else:
+                    # Same section: continue previous table
+                    if maybe_header == current_header or len(maybe_header) == current_col_count:
+                        current_rows.extend(rest_rows)
+                    else:
+                        current_rows.extend(table)
+
+    if current_rows:
+        df = pd.DataFrame(current_rows, columns=current_header)
+        tables.append((df, start_page, table_index, current_caption))
+
     return tables
 
 def extract_text_without_tables(page):

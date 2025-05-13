@@ -1,18 +1,20 @@
 import pandas as pd
 import json
 
-def format_table_as_markdown_json_hybrid(df: pd.DataFrame, page_num: int = None, table_num: int = None) -> str:
+def format_table_as_markdown_json_hybrid(df: pd.DataFrame, page_num: int = None, table_num: int = None, table_name: str = "") -> str:
     """
-    Converts a pandas DataFrame to a hybrid Markdown + JSON string for better LLM comprehension.
+    Combines markdown table, JSON data, and flattened key-value text for embedding.
     """
-    markdown = df.to_markdown(index=False)
-    json_data = df.to_dict(orient="records")
-    json_str = json.dumps(json_data, indent=2)
+    markdown_str = df.to_markdown(index=False)
 
-    header = f"### Table {table_num} on Page {page_num}\n" if page_num and table_num else ""
+    flat_rows = []
+    for i, row in df.iterrows():
+        row_kv = ", ".join(f"{col}: {row[col]}" for col in df.columns)
+        flat_rows.append(f"Row {i + 1} - {row_kv}")
+    flat_text = "\n".join(flat_rows)
 
-    return (
-        f"{header}Below is the same table in two formats: Markdown (for readability) and JSON (for structure).\n\n"
-        f"#### Markdown Table:\n```\n{markdown}\n```\n\n"
-        f"#### JSON Table:\n```json\n{json_str}\n```\n"
-    )
+    output = f"## {table_name or f'Table {table_num} on Page {page_num}'}\n\n"
+    output += f"### Markdown View\n{markdown_str}\n\n"
+    output += f"### Flattened View (for embedding)\n{flat_text}\n"
+
+    return output

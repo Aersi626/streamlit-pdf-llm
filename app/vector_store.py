@@ -19,6 +19,17 @@ def get_index_dir(pdf_file_path):
 def index_exists(index_dir):
     return os.path.exists(os.path.join(index_dir, "index.faiss"))
 
+def inject_metadata_into_content(content: str, metadata: dict) -> str:
+    """
+    Inject metadata into content to provide contextual signal for embeddings.
+    """
+    lines = []
+    for key in ['caption', 'page', 'table', 'chunk', 'source']:
+        if key in metadata:
+            lines.append(f"{key.capitalize()}: {metadata[key]}")
+    return "\n".join(lines + ["", content])
+
+
 def build_vectorstore(documents, embedding_model="BAAI/bge-large-en", save_path="./models/faiss_index"):
     #splitter = MarkdownTextSplitter(chunk_size=1000, chunk_overlap=200)
     # improve performance by using RecursiveCharacterTextSplitter
@@ -36,7 +47,7 @@ def build_vectorstore(documents, embedding_model="BAAI/bge-large-en", save_path=
     status_text = st.empty()
 
     # Prepare texts
-    texts = [doc.page_content for doc in docs]
+    texts = [inject_metadata_into_content(doc.page_content, doc.metadata) for doc in docs]
     metadatas = [doc.metadata for doc in docs]
 
     embeddings_list = [None] * total
