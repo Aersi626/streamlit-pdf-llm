@@ -58,6 +58,13 @@ user_input = st.text_input("Ask a question about the PDF:")
 if user_input:
     result = chatbot.invoke({"question": user_input,
                       "chat_history": st.session_state.chat_history})
+    
+    # DEBUG: Show source documents passed to LLM
+    if "source_documents" in result:
+        print("📎 Context passed to LLM:")
+        for i, doc in enumerate(result["source_documents"]):
+            print(f"--- Source {i+1} ---")
+            print(doc.page_content[:1000])
 
     st.session_state.chat_history.append(("You", user_input))
     st.session_state.chat_history.append(("Bot", result["answer"]))

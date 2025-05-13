@@ -4,17 +4,17 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains.combine_documents.stuff import StuffDocumentsChain
 from app.retriever import get_retriever
+from langchain.callbacks import StdOutCallbackHandler
 
 
 
-def create_chatbot(vectorstore, llm_model="llama3.1"):
+def create_chatbot(vectorstore, llm_model="llama3.1:8b-instruct-q8_0"):
     llm = OllamaLLM(model=llm_model)
 
     # Define custom system prompt
-    system_prompt = """You are an expert assistant for reading PDF documents.
-    You may encounter tables in markdown format.
-    If tables are provided in the context, read them carefully and use the table values to answer questions.
-    If the answer is not in the provided context, say "I don't know based on the document.".
+    system_prompt = """You are an expert assistant. The context includes Markdown tables.
+    Pay attention to column headers and row values when answering questions.
+    Only use the information from the provided context.".
     """
 
     # Define the full prompt template
@@ -44,9 +44,20 @@ def create_chatbot(vectorstore, llm_model="llama3.1"):
 
     # Create chain with custom prompt
     qa_chain = ConversationalRetrievalChain(
-        retriever = get_retriever(vectorstore, k=1000),
+        retriever = get_retriever(vectorstore, k=10),
         combine_docs_chain=combine_docs_chain,
         question_generator=question_generator,
         return_source_documents=True,
+        verbose=True,
+        callbacks=[StdOutCallbackHandler()]
     )
+
+    retriever = get_retriever(vectorstore, k=10)
+    docs = retriever.get_relevant_documents("do you see 60007 RAWDATA?")
+    print("🔍 Retrieved documents for test query:")
+    for i, doc in enumerate(docs):
+        print(f"--- Doc {i+1} ---")
+        print("Metadata:", doc.metadata)
+        print(doc.page_content[:1000], "\n")
+
     return qa_chain

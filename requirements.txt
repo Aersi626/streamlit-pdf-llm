@@ -6,3 +6,6 @@ langchain_ollama
 sentence_transformers
 pdfplumber
 torch
+camelot-py[cv]
+tabula-py
+matplotlib

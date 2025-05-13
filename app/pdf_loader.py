@@ -1,48 +1,70 @@
-import pdfplumber
 from langchain.schema import Document
-from typing import List
+from app.table_extractor import extract_tables_from_pdf, extract_text_without_tables
+from app.table_formatter import format_table_as_markdown_json_hybrid
 
-def table_to_markdown(table: List[List[str]]) -> str:
-    if not table or len(table) < 2:
-        return ""
+import pdfplumber
+import os
+import pandas as pd
 
-    # Safe row (None -> "")
-    def safe_row(row):
-        return [str(cell).strip() if cell is not None else "" for cell in row]
+def chunk_table(df: pd.DataFrame, page_num: int, table_num: int, chunk_size: int = 200) -> list[str]:
+    """
+    Splits a DataFrame into markdown chunks with repeated headers.
+    """
+    chunks = []
+    total_rows = len(df)
+    for start in range(0, total_rows, chunk_size):
+        chunk_df = df.iloc[start:start + chunk_size].reset_index(drop=True)
+        hybrid_chunk = format_table_as_markdown_json_hybrid(chunk_df, page_num=page_num, table_num=table_num)
+        chunks.append(hybrid_chunk)
+    return chunks
 
-    header = safe_row(table[0])
-    rows = [safe_row(row) for row in table[1:]]
+def load_and_split_pdf(pdf_path: str) -> list[Document]:
+    """
+    Loads text and tables from a PDF, returns as LangChain Documents.
+    Saves extracted content to separate .txt/.md logs for debugging or context injection.
+    """
+    base_name = os.path.splitext(os.path.basename(pdf_path))[0]
 
-    # Build markdown
-    md = "| " + " | ".join(header) + " |\n"
-    md += "| " + " | ".join(["---"] * len(header)) + " |\n"
-
-    for row in rows:
-        md += "| " + " | ".join(row) + " |\n"
-
-    return md
-
-def load_and_split_pdf(file_path: str) -> List[Document]:
     documents = []
 
-    with pdfplumber.open(file_path) as pdf:
+    # Load non-table text using pdfplumber
+    with pdfplumber.open(pdf_path) as pdf:
         for page_num, page in enumerate(pdf.pages, start=1):
-            text = page.extract_text() or ""
+            text = extract_text_without_tables(page)
+            if text:
+                documents.append(Document(
+                    page_content=text,
+                    metadata={"source": base_name, "page": page_num, "type": "text"}
+                ))
 
-            tables = page.extract_tables()
+    # Add chunked tables as separate documents
+    tables = extract_tables_from_pdf(pdf_path)
+    for df, page_num, table_num in tables:
+        table_chunks = chunk_table(df, page_num=page_num, table_num=table_num, chunk_size=200)
+        for chunk_idx, chunk_text in enumerate(table_chunks, start=1):
+            documents.append(Document(
+                page_content=chunk_text,
+                metadata={
+                    "source": base_name,
+                    "page": page_num,
+                    "table": table_num,
+                    "chunk": chunk_idx,
+                    "type": "table"
+                }
+            ))
 
-            # Add page text if exists
-            if text.strip():
-                documents.append(Document(page_content=f"Page {page_num}:\n\n{text}",
-                                          metadata={"page": page_num, "type": "text"}))
-
-            # Add each table as separate document
-            for table_num, table in enumerate(tables, start=1):
-                if table:
-                    table_md = f"### Table {table_num} on Page {page_num}\n\n"
-                    table_md += table_to_markdown(table)
-
-                    documents.append(Document(page_content=table_md,
-                                              metadata={"page": page_num, "type": "table", "table_number": table_num}))
+    # Save extracted text and tables to separate files for debugging
+    log_path = os.path.join("logs", f"{base_name}_rag_context.txt")
+    log_documents_for_debugging(documents, log_path)
 
     return documents
+
+def log_documents_for_debugging(docs: list, output_path: str):
+    """Write LangChain Document contents to a .txt file for visibility."""
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        for i, doc in enumerate(docs, 1):
+            f.write(f"\n\n===== Document {i} =====\n")
+            f.write(f"Metadata: {doc.metadata}\n")
+            f.write(f"\nContent:\n{doc.page_content[:10000]}")  # Trim for readability
