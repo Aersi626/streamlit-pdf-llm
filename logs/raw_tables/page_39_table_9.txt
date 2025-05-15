@@ -1,0 +1,40 @@
+Page: 39, Table: 9, Caption: 8.5 Alarms
+Machine Type
+
+2842 | 2842 | 10002842 | 20002842 | L1_FLIPPER Axis motor connect error!
+2843 | 2843 | 10002843 | 20002843 | L1_FLIPPER Axis encoder connect error!
+2844 | 2844 | 10002844 | 20002844 | L1_FLIPPER Axis system halt error!
+2845 | 2845 | 10002845 | 20002845 | L1_FLIPPER Axis rom device error!
+2846 | 2846 | 10002846 | 20002846 | L1_FLIPPER Axis rom device error!
+2847 | 2847 | 10002847 | 20002847 | L1_FLIPPER Axis error! ( all )
+2848 | 2848 | 10002848 | 20002848 | L1_FLIPPER Axis (+)limit error!
+2849 | 2849 | 10002849 | 20002849 | L1_FLIPPER Axis (-)limit error!
+2850 | 2850 | 10002850 | 20002850 | L1_FLIPPER Axis servo not ready!
+2851 | 2851 | 10002851 | 20002851 | L1_FLIP_ELELVATOR Axis S/W (-)limit error!
+2852 | 2852 | 10002852 | 20002852 | L1_FLIP_ELELVATOR Axis S/W (+)limit error!
+2853 | 2853 | 10002853 | 20002853 | L1_FLIP_ELELVATOR Axis motion Parameter (-)Limit error!
+2854 | 2854 | 10002854 | 20002854 | L1_FLIP_ELELVATOR Axis motion Parameter (+)Limit error!
+2855 | 2855 | 10002855 | 20002855 | L1_FLIP_ELELVATOR Axis position overflow error!
+2856 | 2856 | 10002856 | 20002856 | L1_FLIP_ELELVATOR Axis over current error!
+2857 | 2857 | 10002857 | 20002857 | L1_FLIP_ELELVATOR Axis over speed error!
+2858 | 2858 | 10002858 | 20002858 | L1_FLIP_ELELVATOR Axis position tracking error!
+2859 | 2859 | 10002859 | 20002859 | L1_FLIP_ELELVATOR Axis over load error!
+2860 | 2860 | 10002860 | 20002860 | L1_FLIP_ELELVATOR Axis over heat error!
+2861 | 2861 | 10002861 | 20002861 | L1_FLIP_ELELVATOR Axis back EMF error!
+2862 | 2862 | 10002862 | 20002862 | L1_FLIP_ELELVATOR Axis motor power error!
+2863 | 2863 | 10002863 | 20002863 | L1_FLIP_ELELVATOR Axis inposition error!
+2864 | 2864 | 10002864 | 20002864 | L1_FLIP_ELELVATOR Axis EMG status!
+2865 | 2865 | 10002865 | 20002865 | L1_FLIP_ELELVATOR Axis step out error!
+2866 | 2866 | 10002866 | 20002866 | L1_FLIP_ELELVATOR Axis over temp error!
+2867 | 2867 | 10002867 | 20002867 | L1_FLIP_ELELVATOR Axis motor connect error!
+2868 | 2868 | 10002868 | 20002868 | L1_FLIP_ELELVATOR Axis encoder connect error!
+2869 | 2869 | 10002869 | 20002869 | L1_FLIP_ELELVATOR Axis system halt error!
+2870 | 2870 | 10002870 | 20002870 | L1_FLIP_ELELVATOR Axis rom device error!
+2871 | 2871 | 10002871 | 20002871 | L1_FLIP_ELELVATOR Axis rom device error!
+2872 | 2872 | 10002872 | 20002872 | L1_FLIP_ELELVATOR Axis error! ( all )
+2873 | 2873 | 10002873 | 20002873 | L1_FLIP_ELELVATOR Axis (+)limit error!
+2874 | 2874 | 10002874 | 20002874 | L1_FLIP_ELELVATOR Axis (-)limit error!
+2875 | 2875 | 10002875 | 20002875 | L1_FLIP_ELELVATOR Axis servo not ready!
+2876 | 2876 | 10002876 | 20002876 | RAIL2_WIDTH Axis S/W (-)limit error!
+2877 | 2877 | 10002877 | 20002877 | RAIL2_WIDTH Axis S/W (+)limit error!
+2878 | 2878 | 10002878 | 20002878 | RAIL2_WIDTH Axis motion Parameter (-)Limit error!

@@ -1,0 +1,40 @@
+Page: 36, Table: 9, Caption: 8.5 Alarms
+Machine Type
+
+2424 | 2424 | 10002424 | 20002424 | Rail3 Command is Collision Position against Rail4.
+2425 | 2425 | 10002425 | 20002425 | Rail4 Command is Collision Position against Rail3.
+2430 | 2430 | 10002430 | 20002430 | NG-PCB was not removed.
+2431 | 2431 | 10002431 | 20002431 | Checked Front Lane PCB Collision Sensor.
+2432 | 2432 | 10002432 | 20002432 | Checked Rear Lane PCB Collision Sensor.
+2433 | 2433 | 10002433 | 20002433 | Please Check GUI Error Message
+2434 | 2434 | 10002434 | 20002434 | Backup Pin Unit Setting is Changed.
+2435 | 2435 | 10002435 | 20002435 | Before Conveyor Width adjustment
+2436 | 2436 | 10002436 | 20002436 | Conveyor Width adjustment done
+2437 | 2437 | 10002437 | 20002437 | Checked Front Lane PCB Collision Sensor.
+2438 | 2438 | 10002438 | 20002438 | Checked Front Lane PCB Work Out Collision Sensor.
+2440 | 2440 | 10002440 | 20002440 | The laser for Auto focus fails to find a focus height.
+2441 | 2441 | 10002441 | 20002441 | MCS did not get PCB Defect Result of Lane1.
+2442 | 2442 | 10002442 | 20002442 | MCS did not get PCB Defect Result of Lane2.
+2443 | 2443 | 10002443 | 20002443 | MCS did not read Job file.
+2500 | 2500 | 10002500 | 20002500 | There are some Communication Error of Laser System.
+2600 | 2600 | 10002600 | 20002600 | Motion Gain Value Error.
+2601 | 2601 | 10002601 | 20002601 | Axis Encoder Error.
+2602 | 2602 | 10002602 | 20002602 | Motion Following Error.
+2603 | 2603 | 10002603 | 20002603 | Checked Hardware Conveyor Manual Switch On.
+2604 | 2604 | 10002604 | 20002604 | There some Problem on Initializing STMC Board.
+2605 | 2605 | 10002605 | 20002605 | It needs enough review and aging test.
+2606 | 2606 | 10002606 | 20002606 | X_AXIS Motion Following
+2607 | 2607 | 10002607 | 20002607 | Y_AXIS Motion Following Error.
+2608 | 2608 | 10002608 | 20002608 | Entry Shuttle Motion Following Error.
+2609 | 2609 | 10002609 | 20002609 | Exit Shuttle Motion Following Error.
+2610 | 2610 | 10002610 | 20002610 | Dispenser Z-Axis Motion Following Error.
+2611 | 2611 | 10002611 | 20002611 | Checked Rail 1 Up Sensor.
+2612 | 2612 | 10002612 | 20002612 | It does not Check Rail 1 Up Sensor.
+2613 | 2613 | 10002613 | 20002613 | Checked Rail 2 Up Sensor.
+2614 | 2614 | 10002614 | 20002614 | It does not Check Rail 2 Up Sensor.
+2615 | 2615 | 10002615 | 20002615 | Checked Rail 1/2 Up Sensor.
+2616 | 2616 | 10002616 | 20002616 | It does not Check 1/2 Up Sensor.
+2618 | 2618 | 10002618 | 20002618 | Motion Done TimeOut Error
+2620 | 2620 | 10002620 | 20002620 | Checked Front Side Pusher Up Sensor.
+2621 | 2621 | 10002621 | 20002621 | Checked Front Side Pusher Down Sensor.
+2622 | 2622 | 10002622 | 20002622 | Checked Rear Side Pusher Up Sensor.

@@ -1,0 +1,39 @@
+Page: 35, Table: 5, Caption: 8.5
+
+2048 | 2048 | 10002048 | 20002048 | U Axis Position Error.
+2049 | 2049 | 10002049 | 20002049 | Y Axis Position Error.
+2050 | 2050 | 10002050 | 20002050 | U axis checked (-)limit sensor.
+2051 | 2051 | 10002051 | 20002051 | Y axis checked (-)limit sensor.
+2052 | 2052 | 10002052 | 20002052 | U axis checked (+)limit sensor..
+2053 | 2053 | 10002053 | 20002053 | Y axis checked (+)limit sensor.
+2080 | 2080 | 10002080 | 20002080 | Communication Error
+2101 | 2101 | 10002101 | 20002101 | Head motor and Lens motor shows different transfer value!
+2102 | 2102 | 10002102 | 20002102 | Lens motor and Head motor shows different transfer value!
+2201 | 2201 | 10002201 | 20002201 | Conveyors are still moving.
+2203 | 2203 | 10002203 | 20002203 | Machine does not Move.
+2204 | 2204 | 10002204 | 20002204 | Machine Basic Setting is Changed.
+2300 | 2300 | 10002300 | 20002300 | Head StepServo Motor Amp is not in Servo On status.
+2301 | 2301 | 10002301 | 20002301 | Head StepServo Motor Postive Limit Error.
+2302 | 2302 | 10002302 | 20002302 | Lens StepServo Motor Amp is not Servo On.
+2303 | 2303 | 10002303 | 20002303 | Lens StepServo Motor Postive Limit Error.
+2304 | 2304 | 10002304 | 20002304 | StepZoom Motor Moving Time Out.
+2305 | 2305 | 10002305 | 20002305 | StepZoom Motor Following Error.
+2306 | 2306 | 10002306 | 20002306 | Head Motor Communication Error.
+2307 | 2307 | 10002307 | 20002307 | Lens Motor Communication Error.
+2308 | 2308 | 10002308 | 20002308 | Head StepServo Received Error.
+2309 | 2309 | 10002309 | 20002309 | Lens StepServo Received Error.
+2310 | 2310 | 10002310 | 20002310 | Conveyor Width Setting Value Error.
+2311 | 2311 | 10002311 | 20002311 | Conveyor Command Value is Under the Minimum Value.
+2312 | 2312 | 10002312 | 20002312 | Conveyor Command Value is Over the Maximum Value.
+2410 | 2410 | 10002410 | 20002410 | Front Lane UpStream SMEMA In Error.
+2411 | 2411 | 10002411 | 20002411 | Rear Lane UpStream SMEMA In Error.
+2412 | 2412 | 10002412 | 20002412 | Front Lane DownStream SMEMA In Error.
+2413 | 2413 | 10002413 | 20002413 | Rear Lane DownStream SMEMA In Error.
+2415 | 2415 | 10002415 | 20002415 | Conveyor Rail 1 & 2 Collision Error.
+2416 | 2416 | 10002416 | 20002416 | Conveyor Rail 2 & 3 Collision Error.
+2417 | 2417 | 10002417 | 20002417 | Conveyor Rail 3 & 4 Collision1 Error.
+2418 | 2418 | 10002418 | 20002418 | Conveyor Rail 3 & 4 Collision2 Error.
+2419 | 2419 | 10002419 | 20002419 | Conveyor Backup Unit Collision Error.
+2420 | 2420 | 10002420 | 20002420 | Rail1 Command is Collision Position against Rail2.
+2421 | 2421 | 10002421 | 20002421 | Rail2 Command is Collision Position against Rail1.
+2422 | 2422 | 10002422 | 20002422 | Rail2 Command is Collision Position against Rail3.

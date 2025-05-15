@@ -1,0 +1,22 @@
+Page: 42, Table: 9, Caption: 6 OperatorCommandIssued OperatorCommand
+
+2956 | 2956 | 10002956 | 20002956 | RAIL3_WIDTH Axis over current error!
+2957 | 2957 | 10002957 | 20002957 | RAIL3_WIDTH Axis over speed error!
+2958 | 2958 | 10002958 | 20002958 | RAIL3_WIDTH Axis position tracking error!
+2959 | 2959 | 10002959 | 20002959 | RAIL3_WIDTH Axis over load error!
+2960 | 2960 | 10002960 | 20002960 | RAIL3_WIDTH Axis over heat error!
+2961 | 2961 | 10002961 | 20002961 | RAIL3_WIDTH Axis back EMF error!
+2962 | 2962 | 10002962 | 20002962 | RAIL3_WIDTH Axis motor power error!
+2963 | 2963 | 10002963 | 20002963 | RAIL3_WIDTH Axis inposition error!
+2964 | 2964 | 10002964 | 20002964 | RAIL3_WIDTH Axis EMG status!
+2965 | 2965 | 10002965 | 20002965 | RAIL3_WIDTH Axis step out error!
+2966 | 2966 | 10002966 | 20002966 | RAIL3_WIDTH Axis over temp error!
+2967 | 2967 | 10002967 | 20002967 | RAIL3_WIDTH Axis motor connect error!
+2968 | 2968 | 10002968 | 20002968 | RAIL3_WIDTH Axis encoder connect error!
+2969 | 2969 | 10002969 | 20002969 | RAIL3_WIDTH Axis system halt error!
+2970 | 2970 | 10002970 | 20002970 | RAIL3_WIDTH Axis rom device error!
+2971 | 2971 | 10002971 | 20002971 | RAIL3_WIDTH Axis rom device error!
+2972 | 2972 | 10002972 | 20002972 | RAIL3_WIDTH Axis error! ( all )
+2973 | 2973 | 10002973 | 20002973 | RAIL3_WIDTH Axis (+)limit error!
+2974 | 2974 | 10002974 | 20002974 | RAIL3_WIDTH Axis (-)limit error!
+2975 | 2975 | 10002975 | 20002975 | RAIL3_WIDTH Axis servo not ready!

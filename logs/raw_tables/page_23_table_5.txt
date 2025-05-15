@@ -1,0 +1,39 @@
+Page: 23, Table: 5, Caption: 8.5
+
+2888 | 2888 | 10002888 | 20002888 | RAIL2_WIDTH Axis inposition error!
+2889 | 2889 | 10002889 | 20002889 | RAIL2_WIDTH Axis EMG status!
+2890 | 2890 | 10002890 | 20002890 | RAIL2_WIDTH Axis step out error!
+2891 | 2891 | 10002891 | 20002891 | RAIL2_WIDTH Axis over temp error!
+2892 | 2892 | 10002892 | 20002892 | RAIL2_WIDTH Axis motor connect error!
+2893 | 2893 | 10002893 | 20002893 | RAIL2_WIDTH Axis encoder connect error!
+2894 | 2894 | 10002894 | 20002894 | RAIL2_WIDTH Axis system halt error!
+2895 | 2895 | 10002895 | 20002895 | RAIL2_WIDTH Axis rom device error!
+2896 | 2896 | 10002896 | 20002896 | RAIL2_WIDTH Axis rom device error!
+2897 | 2897 | 10002897 | 20002897 | RAIL2_WIDTH Axis error! ( all )
+2898 | 2898 | 10002898 | 20002898 | RAIL2_WIDTH Axis (+)limit error!
+2899 | 2899 | 10002899 | 20002899 | RAIL2_WIDTH Axis (-)limit error!
+2900 | 2900 | 10002900 | 20002900 | RAIL2_WIDTH Axis servo not ready!
+2901 | 2901 | 10002901 | 20002901 | L2_FLIPPER Axis S/W (-)limit error!
+2902 | 2902 | 10002902 | 20002902 | L2_FLIPPER Axis S/W (+)limit error!
+2903 | 2903 | 10002903 | 20002903 | L2_FLIPPER Axis motion Parameter (-)Limit error!
+2904 | 2904 | 10002904 | 20002904 | L2_FLIPPER Axis motion Parameter (+)Limit error!
+2905 | 2905 | 10002905 | 20002905 | L2_FLIPPER Axis position overflow error!
+2906 | 2906 | 10002906 | 20002906 | L2_FLIPPER Axis over current error!
+2907 | 2907 | 10002907 | 20002907 | L2_FLIPPER Axis over speed error!
+2908 | 2908 | 10002908 | 20002908 | L2_FLIPPER Axis position tracking error!
+2909 | 2909 | 10002909 | 20002909 | L2_FLIPPER Axis over load error!
+2910 | 2910 | 10002910 | 20002910 | L2_FLIPPER Axis over heat error!
+2911 | 2911 | 10002911 | 20002911 | L2_FLIPPER Axis back EMF error!
+2912 | 2912 | 10002912 | 20002912 | L2_FLIPPER Axis motor power error!
+2913 | 2913 | 10002913 | 20002913 | L2_FLIPPER Axis inposition error!
+2914 | 2914 | 10002914 | 20002914 | L2_FLIPPER Axis EMG status!
+2915 | 2915 | 10002915 | 20002915 | L2_FLIPPER Axis step out error!
+2916 | 2916 | 10002916 | 20002916 | L2_FLIPPER Axis over temp error!
+2917 | 2917 | 10002917 | 20002917 | L2_FLIPPER Axis motor connect error!
+2918 | 2918 | 10002918 | 20002918 | L2_FLIPPER Axis encoder connect error!
+2919 | 2919 | 10002919 | 20002919 | L2_FLIPPER Axis system halt error!
+2920 | 2920 | 10002920 | 20002920 | L2_FLIPPER Axis rom device error!
+2921 | 2921 | 10002921 | 20002921 | L2_FLIPPER Axis rom device error!
+2922 | 2922 | 10002922 | 20002922 | L2_FLIPPER Axis error! ( all )
+2923 | 2923 | 10002923 | 20002923 | L2_FLIPPER Axis (+)limit error!
+2924 | 2924 | 10002924 | 20002924 | L2_FLIPPER Axis (-)limit error!

@@ -1,0 +1,42 @@
+Page: 25, Table: 5, Caption: 8.5
+
+2964 | 2964 | 10002964 | 20002964 | RAIL3_WIDTH Axis EMG status!
+2965 | 2965 | 10002965 | 20002965 | RAIL3_WIDTH Axis step out error!
+2966 | 2966 | 10002966 | 20002966 | RAIL3_WIDTH Axis over temp error!
+2967 | 2967 | 10002967 | 20002967 | RAIL3_WIDTH Axis motor connect error!
+2968 | 2968 | 10002968 | 20002968 | RAIL3_WIDTH Axis encoder connect error!
+2969 | 2969 | 10002969 | 20002969 | RAIL3_WIDTH Axis system halt error!
+2970 | 2970 | 10002970 | 20002970 | RAIL3_WIDTH Axis rom device error!
+2971 | 2971 | 10002971 | 20002971 | RAIL3_WIDTH Axis rom device error!
+2972 | 2972 | 10002972 | 20002972 | RAIL3_WIDTH Axis error! ( all )
+2973 | 2973 | 10002973 | 20002973 | RAIL3_WIDTH Axis (+)limit error!
+2974 | 2974 | 10002974 | 20002974 | RAIL3_WIDTH Axis (-)limit error!
+2975 | 2975 | 10002975 | 20002975 | RAIL3_WIDTH Axis servo not ready!
+3101 | 3101 | 10003101 | 20003101 | Fail to make Memory for FOV. FOV information is empty.
+3102 | 3102 | 10003102 | 20003102 | Currunt inspection mode is manual mode but Currunt FOV is in
+Normal mode
+3103 | 3103 | 10003103 | 20003103 | Currunt inspection mode is normal mode but Currunt FOV is in
+Manual mode
+3104 | 3104 | 10003104 | 20003104 | Can not open XML Job file.
+3105 | 3105 | 10003105 | 20003105 | File [DualCamCalib.ini] does not exist or file is broken.Please
+check folder
+3106 | 3106 | 10003106 | 20003106 | An unexpected sequence error occurred between GUI and Vision
+interface.
+3201 | 3201 | 10003201 | 20003201 | Currunt Hard disk has not enough free space. Please disable image
+save all option.
+3202 | 3202 | 10003202 | 20003202 | RGB option is On but can not get RGB image captured.
+3203 | 3203 | 10003203 | 20003203 | Failed to load Simulation Images.
+3204 | 3204 | 10003204 | 20003204 | Pad Referencing Error.Failed to load PRDLL file .
+3205 | 3205 | 10003205 | 20003205 | CAM barcode library Error .
+3206 | 3206 | 10003206 | 20003206 | Errors occured while loading Z-Scale data at K-Smart.
+3207 | 3207 | 10003207 | 20003207 | Errors occured while loading Z-Scale data .
+3208 | 3208 | 10003208 | 20003208 | Global head type setting is wrong.
+3209 | 3209 | 10003209 | 20003209 | Failed to make Thread memory. ImageSize
+3210 | 3210 | 10003210 | 20003210 | Failed to make Thread memory .
+3211 | 3211 | 10003211 | 20003211 | Can not find Pad Reference Dongle key. Please check Dongle key
+is attached at USB Port
+3212 | 3212 | 10003212 | 20003212 | Can not use ZAxis option. Please uncheck
+3213 | 3213 | 10003213 | 20003213 | Vision Parameter Error.
+3214 | 3214 | 10003214 | 20003214 | PZT problem occur in reference image.
+3215 | 3215 | 10003215 | 20003215 | Failed to Save Reference Roataion image.
+3216 | 3216 | 10003216 | 20003216 | Failed to save Referece Image

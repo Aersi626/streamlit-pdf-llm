@@ -1,0 +1,12 @@
+Page: 4, Table: 2, Caption: 8.1.3
+
+ID | Name | Type | Unit | Min | Max | Description
+0 | AlarmID | U4 | DV | U4 0 | U4
+4294967295 | Alarm ID (ALID) of the most recent
+alarm to change state. This may be
+linked to any alarm's SET or CLEAR
+collection event.
+1 | EventLimit | L | DV | L | L | List of one or more Limit IDs of
+limits that have been crossed. This
+may be linked to any variable's Limit
+Monitoring collection event.

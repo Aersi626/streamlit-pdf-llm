@@ -1,0 +1,54 @@
+Page: 2, Table: 0, Caption: 8.1.1
+
+Parameter | Description | Range | Resolution | Typical value
+Network hardware |  |  |  | 
+Device ID | The device-id identifies the
+equipment and will be assigned by
+the factory. | 0 to 32767 | 1 | 32767
+IP Address | If PASSIVE, then the IP address
+will must be localhost and the TCP
+port will be the port you want the
+host to connect to. If ACTIVE, the
+IP address will be the name or
+dotted integer format IP address of
+the host machine and the TCP port
+will be the host port for the
+equipment to connect to. |  |  | 127.0.0.1
+TCP Port | The TCP port number. |  |  | 6000
+Active or Passive | The equipment must be configured
+to be a PASSIVE or ACTIVE
+connection. Usually, a PASSIVE
+connection is preferred for the
+equipment side. | PASSIVE or
+ACTIVE |  | PASSIVE
+T3 | The T3 timeout is the transaction
+timer. This is the maximum amount
+of time between a primary message
+and the expected response before
+declaring the transaction closed. If
+the timer expires, an S9F9 error
+message is sent if AUTOS9F9 is
+specified. | 1 – 120 seconds | 1 msec | 45 seconds
+T5 | The T5 timeout is the connect
+separation timeout. This is the
+amount of time which must elapse
+between successive attempts to
+actively establish a connection. | 1 – 240 seconds | 1 msec | 5 seconds
+T6 | The T6 timeout is the control
+transaction timeout. This is the
+maximum amount of time allowed
+between an HSMS-level control
+message and its response. If the
+timer expires, communications
+failure is declared. | 1 – 240 seconds | 1 msec | 5 seconds
+T7 | The T7 timeout is the NOT
+SELECTED timeout. This is the
+maximum amount of time a TCP/IP
+connection can remain in the NOT
+SELECTED state (no HSMS
+activity) before a communications
+failure is declared. | 1 – 240 seconds | 1 msec | 10 seconds
+T8 | The T8 timeout is the network
+intercharacter timeout. This is the
+maximum amount of time allowed
+between successive bytes of a single | 1 – 120 seconds | 1 msec | 5 seconds

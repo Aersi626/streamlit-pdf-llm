@@ -1,0 +1,39 @@
+Page: 41, Table: 5, Caption: 8.5
+
+2918 | 2918 | 10002918 | 20002918 | L2_FLIPPER Axis encoder connect error!
+2919 | 2919 | 10002919 | 20002919 | L2_FLIPPER Axis system halt error!
+2920 | 2920 | 10002920 | 20002920 | L2_FLIPPER Axis rom device error!
+2921 | 2921 | 10002921 | 20002921 | L2_FLIPPER Axis rom device error!
+2922 | 2922 | 10002922 | 20002922 | L2_FLIPPER Axis error! ( all )
+2923 | 2923 | 10002923 | 20002923 | L2_FLIPPER Axis (+)limit error!
+2924 | 2924 | 10002924 | 20002924 | L2_FLIPPER Axis (-)limit error!
+2925 | 2925 | 10002925 | 20002925 | L2_FLIPPER Axis servo not ready!
+2926 | 2926 | 10002926 | 20002926 | L2_FLIP_ELELVATOR Axis S/W (-)limit error!
+2927 | 2927 | 10002927 | 20002927 | L2_FLIP_ELELVATOR Axis S/W (+)limit error!
+2928 | 2928 | 10002928 | 20002928 | L2_FLIP_ELELVATOR Axis motion Parameter (-)Limit error!
+2929 | 2929 | 10002929 | 20002929 | L2_FLIP_ELELVATOR Axis motion Parameter (+)Limit error!
+2930 | 2930 | 10002930 | 20002930 | L2_FLIP_ELELVATOR Axis position overflow error!
+2931 | 2931 | 10002931 | 20002931 | L2_FLIP_ELELVATOR Axis over current error!
+2932 | 2932 | 10002932 | 20002932 | L2_FLIP_ELELVATOR Axis over speed error!
+2933 | 2933 | 10002933 | 20002933 | L2_FLIP_ELELVATOR Axis position tracking error!
+2934 | 2934 | 10002934 | 20002934 | L2_FLIP_ELELVATOR Axis over load error!
+2935 | 2935 | 10002935 | 20002935 | L2_FLIP_ELELVATOR Axis over heat error!
+2936 | 2936 | 10002936 | 20002936 | L2_FLIP_ELELVATOR Axis back EMF error!
+2937 | 2937 | 10002937 | 20002937 | L2_FLIP_ELELVATOR Axis motor power error!
+2938 | 2938 | 10002938 | 20002938 | L2_FLIP_ELELVATOR Axis inposition error!
+2939 | 2939 | 10002939 | 20002939 | L2_FLIP_ELELVATOR Axis EMG status!
+2940 | 2940 | 10002940 | 20002940 | L2_FLIP_ELELVATOR Axis step out error!
+2941 | 2941 | 10002941 | 20002941 | L2_FLIP_ELELVATOR Axis over temp error!
+2942 | 2942 | 10002942 | 20002942 | L2_FLIP_ELELVATOR Axis motor connect error!
+2943 | 2943 | 10002943 | 20002943 | L2_FLIP_ELELVATOR Axis encoder connect error!
+2944 | 2944 | 10002944 | 20002944 | L2_FLIP_ELELVATOR Axis system halt error!
+2945 | 2945 | 10002945 | 20002945 | L2_FLIP_ELELVATOR Axis rom device error!
+2946 | 2946 | 10002946 | 20002946 | L2_FLIP_ELELVATOR Axis rom device error!
+2947 | 2947 | 10002947 | 20002947 | L2_FLIP_ELELVATOR Axis error! ( all )
+2948 | 2948 | 10002948 | 20002948 | L2_FLIP_ELELVATOR Axis (+)limit error!
+2949 | 2949 | 10002949 | 20002949 | L2_FLIP_ELELVATOR Axis (-)limit error!
+2950 | 2950 | 10002950 | 20002950 | L2_FLIP_ELELVATOR Axis servo not ready!
+2951 | 2951 | 10002951 | 20002951 | RAIL3_WIDTH Axis S/W (-)limit error!
+2952 | 2952 | 10002952 | 20002952 | RAIL3_WIDTH Axis S/W (+)limit error!
+2953 | 2953 | 10002953 | 20002953 | RAIL3_WIDTH Axis motion Parameter (-)Limit error!
+2954 | 2954 | 10002954 | 20002954 | RAIL3_WIDTH Axis motion Parameter (+)Limit error!

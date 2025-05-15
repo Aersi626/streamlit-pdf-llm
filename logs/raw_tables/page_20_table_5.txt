@@ -1,0 +1,39 @@
+Page: 20, Table: 5, Caption: 8.5
+
+2666 | 2666 | 10002666 | 20002666 | It is Upstream EMG.
+2667 | 2667 | 10002667 | 20002667 | It is Downstream EMG.
+2668 | 2668 | 10002668 | 20002668 | PCB did not arrive at Work OUT sensor from Entry.
+2669 | 2669 | 10002669 | 20002669 | Current conveyor width is same as set PCB width.
+2670 | 2670 | 10002670 | 20002670 | PCB verification result time out error.
+2671 | 2671 | 10002671 | 20002671 | Door Lock error
+2672 | 2672 | 10002672 | 20002672 | Entry Conv Width Limit error
+2673 | 2673 | 10002673 | 20002673 | Work Conv Width Limit error
+2674 | 2674 | 10002674 | 20002674 | Exit Conv Width Limit error
+2675 | 2675 | 10002675 | 20002675 | There is not inspected PCB.
+2676 | 2676 | 10002676 | 20002676 | Inspection result is NG.
+2677 | 2677 | 10002677 | 20002677 | Vacuum pressure sensor is not detected.
+2678 | 2678 | 10002678 | 20002678 | Vacuum pressure sensor is not turned off.
+2679 | 2679 | 10002679 | 20002679 | Lane1 P Machine Info Ack Timeout Error
+2680 | 2680 | 10002680 | 20002680 | Lane2 P Machine Info Ack Timeout Error
+2681 | 2681 | 10002681 | 20002681 | Barcode Shuttle Limit Sensor Error.
+2682 | 2682 | 10002682 | 20002682 | Barcode Shuttle located Home.
+2683 | 2683 | 10002683 | 20002683 | Barcode Shuttle does not operate normally.
+2684 | 2684 | 10002684 | 20002684 | Barcode Shuttle command exceeds the maximum value set.
+2685 | 2685 | 10002685 | 20002685 | Barcode Shuttle command less the minimum value set.
+2686 | 2686 | 10002686 | 20002686 | Dispenser Purge error.
+2687 | 2687 | 10002687 | 20002687 | Dispenser Syringe air pressure limit error.
+2701 | 2701 | 10002701 | 20002701 | The Back-up Plate Clamp is open
+2711 | 2711 | 10002711 | 20002711 | Lane1 Height Guide Sensor Error
+2712 | 2712 | 10002712 | 20002712 | Lane2 Height Guide Sensor Error
+2713 | 2713 | 10002713 | 20002713 | Conveyor Home Move exceeded the time.
+2714 | 2714 | 10002714 | 20002714 | Flipper Home Move exceeded the time.
+2715 | 2715 | 10002715 | 20002715 | Flipper Move exceeded the time.
+2716 | 2716 | 10002716 | 20002716 | Failed to Move. (Home)
+2717 | 2717 | 10002717 | 20002717 | Failed to Move.
+2800 | 2800 | 10002800 | 20002800 | Command sync error
+2801 | 2801 | 10002801 | 20002801 | Fail to renewal origin of machine
+2802 | 2802 | 10002802 | 20002802 | Tryed to turn servo on while Alarming
+2803 | 2803 | 10002803 | 20002803 | Tryed to turn servo on while Emergency mode
+2804 | 2804 | 10002804 | 20002804 | Please press OK after releasing bolt of backup pin unit
+2810 | 2810 | 10002810 | 20002810 | Lane1 entry plate up/down cylinder shows false movements!
+2811 | 2811 | 10002811 | 20002811 | Lane1 entry turn cylinder shows false movements!

@@ -1,0 +1,15 @@
+Page: 45, Table: 6, Caption: 8.6
+
+Name | Description
+Enable/Disable
+Communication | 
+Local/Remote Control | 
+On-line/Off-line Control | 
+Spool Enable/Disable | 
+View Incoming Terminal
+Services | 
+Acknowledge Terminal
+Services | 
+Send Terminal Services | 
+Recipe Upload | 
+Recipe Download | 

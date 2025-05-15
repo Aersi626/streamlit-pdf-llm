@@ -1,0 +1,40 @@
+Page: 33, Table: 5, Caption: 8.5
+
+1186 | 1186 | 10001186 | 20001186 | PCB is jammed at REAR WORK IN sensor.
+1187 | 1187 | 10001187 | 20001187 | PCB did not arrive at REAR WORK OUT sensor.
+1188 | 1188 | 10001188 | 20001188 | PCB is jammed at REAR WORK OUT sensor.
+1189 | 1189 | 10001189 | 20001189 | PCB did not arrive at REAR EXIT IN sensor.
+1190 | 1190 | 10001190 | 20001190 | PCB is jammed at REAR EXIT IN sensor.
+1191 | 1191 | 10001191 | 20001191 | PCB did not arrive at REAR EXIT OUT sensor.
+1192 | 1192 | 10001192 | 20001192 | PCB is jammed at REAR EXIT OUT sensor.
+1193 | 1193 | 10001193 | 20001193 | There are two PCB on REAR Conveyor.
+1194 | 1194 | 10001194 | 20001194 | FRONT Work Stopper Up Sensor was not perceived.
+1195 | 1195 | 10001195 | 20001195 | FRONT Work Stopper Down Sensor was not perceived.
+1196 | 1196 | 10001196 | 20001196 | REAR Work Stopper Up Sensor was not perceived.
+1197 | 1197 | 10001197 | 20001197 | REAR Work Stopper Down Sensor was not perceived.
+1198 | 1198 | 10001198 | 20001198 | There are PCB that for a long time waiting to REAR CONVEYOR.
+1200 | 1200 | 10001200 | 20001200 | WFTPD.exe is not running!
+1201 | 1201 | 10001201 | 20001201 | EMERGENCY button pressed or Front Door is open!
+1202 | 1202 | 10001202 | 20001202 | Low air pressure!
+1203 | 1203 | 10001203 | 20001203 | Motion Control PC(RTPC) shows false movements!
+1204 | 1204 | 10001204 | 20001204 | Front door is opened!
+1205 | 1205 | 10001205 | 20001205 | Motion Board Initialization failed so WinMCS Program is going to shut
+down.
+1206 | 1206 | 10001206 | 20001206 | IO Board Initialization is failed so WinMCS Program is going to shut
+down.
+1207 | 1207 | 10001207 | 20001207 | Serial communication error with STMC.
+1208 | 1208 | 10001208 | 20001208 | Front Door is opened.
+1209 | 1209 | 10001209 | 20001209 | Rear Door is opened.
+1210 | 1210 | 10001210 | 20001210 | There is a Communication Error with STMC Board.
+1211 | 1211 | 10001211 | 20001211 | Servo not Ready State.
+1212 | 1212 | 10001212 | 20001212 | The Contorl Power is OFF.
+1213 | 1213 | 10001213 | 20001213 | The Contorl Power is OFF.
+1214 | 1214 | 10001214 | 20001214 | The Contorl Power is OFF.
+1215 | 1215 | 10001215 | 20001215 | Dust detected in PCB.
+1216 | 1216 | 10001216 | 20001216 | High air pressure.
+1220 | 1220 | 10001220 | 20001220 | Fiducial Result Error
+1700 | 1700 | 10001700 | 20001700 | PZT AMP detected false signal!
+1800 | 1800 | 10001800 | 20001800 | CamBarcode Time Out Error
+1801 | 1801 | 10001801 | 20001801 | BadMarker Time Out Error
+1802 | 1802 | 10001802 | 20001802 | MultiVender Time Out Error
+2000 | 2000 | 10002000 | 20002000 | Servo Not Ready!

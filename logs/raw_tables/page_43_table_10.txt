@@ -1,0 +1,59 @@
+Page: 43, Table: 10, Caption: 70004 ReviewStarted ReviewStarted
+PCBID
+
+8 | PPSelected | A new process program (recipe) has been
+accepted. Either the host or machine
+operator has selected the recipe. | 
+9 | ProcessingCompleted | Normal exit of the EXECUTING state as
+part of the Processing State Machine. | 
+10 | ProcessingStarted | Normal entry of the EXECUTING state
+as part of the Processing State Machine. | 
+11 | ProcessingStateChange | The state of the Processing State Machine
+has changed. | 
+12 | ProcessingStopped | A previously requested STOP command
+has been performed. | 
+13 | SpoolTransmitFailure | A communication failure has occurred
+while in the TRANSMIT SPOOL state. | 
+14 | SpoolingActivated | Spooling State Machine has entered the
+SPOOL ACTIVE state. | 
+15 | SpoolingDeactivated | Spooling State Machine has entered the
+SPOOL INACTIVE state. | 
+16 | ECChange | An equipment constant value was
+changed locally by the operator. | ECID(7),
+ECChangeName(2052),
+ECChangeValue(2053),
+ECPreviousValue(2060)
+17 | TraceTimestampOutOfTolerance | Trace time tolerance set by
+TraceTimestampTolerance is exceeded | 
+18 | HostCommandAccepted | Another host remote command was
+performed. | HostCmdName(10),
+HostCmdHostID(11)
+19 | HostECChange | Another host changed an equipment
+constant(EC) value. | HostECID(9),
+HostECHostID(8)
+20 | HostPPChange | Another host created deleted or overwrote
+a Process Program. | HostPPChangeName(12),
+HostPPChangeStatus(13),
+HostPPChangeHostID(14)
+21 | PPVerificationFailed | Process program (recipe) verification
+failed. | 
+70001 | BarcodeReadingCompleted | BoardBarcodeReadingComplete | EventTime(60001),
+LaneID(61004),
+PCBID(60004),
+ProgramName(60006)
+70002 | InspectionStarted | InspectionStarted | EventTime(60001),
+LaneID(61004),
+PCBID(60004),
+ProgramName(60006)
+70003 | InspectionCompleted | InspectionCompleted | EventTime(60001),
+LaneID(61004),
+PCBID(60004),
+ProgramName(60006),
+PCBSide(60005),
+PCBResult(60002),
+PanelResult(60003),
+RAWDATA(60007)
+70004 | ReviewStarted | ReviewStarted | EventTime(60001),
+LaneID(61004),
+PCBID(60004),
+ProgramName(60006)

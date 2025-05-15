@@ -1,0 +1,39 @@
+Page: 34, Table: 5, Caption: 8.5
+
+2002 | 2002 | 10002002 | 20002002 | Y Axis Limit Error!
+2003 | 2003 | 10002003 | 20002003 | Z Axis Limit Error!
+2004 | 2004 | 10002004 | 20002004 | X Axis Position Error!
+2005 | 2005 | 10002005 | 20002005 | Y Axis Position Error!
+2006 | 2006 | 10002006 | 20002006 | Z Axis Position Error!
+2007 | 2007 | 10002007 | 20002007 | M Axis Position Error!
+2008 | 2008 | 10002008 | 20002008 | M Axis Limit Error!
+2009 | 2009 | 10002009 | 20002009 | U Axis Position Error!
+2010 | 2010 | 10002010 | 20002010 | V Axis Position Error!
+2011 | 2011 | 10002011 | 20002011 | Failed to read SST file!
+2013 | 2013 | 10002013 | 20002013 | Failed to read Job file!
+2014 | 2014 | 10002014 | 20002014 | Fail to read LampUserSet file.
+2016 | 2016 | 10002016 | 20002016 | Axis moving command is exceed hardware Positive limit
+2017 | 2017 | 10002017 | 20002017 | Axis moving commandhas exceeded hardware Negative limit
+2019 | 2019 | 10002019 | 20002019 | U Axis Motor AMP is not READY.
+2020 | 2020 | 10002020 | 20002020 | V Axis Motor AMP is not READY.
+2021 | 2021 | 10002021 | 20002021 | X Axis Motor AMP is not READY.
+2022 | 2022 | 10002022 | 20002022 | Y Axis Motor AMP is not READY.
+2023 | 2023 | 10002023 | 20002023 | Z Axis Motor AMP is not READY.
+2024 | 2024 | 10002024 | 20002024 | M Axis Motor AMP is not READY.
+2025 | 2025 | 10002025 | 20002025 | X Axis Motor AMP is not Servo On.
+2026 | 2026 | 10002026 | 20002026 | Y Axis Motor AMP is not Servo On
+2027 | 2027 | 10002027 | 20002027 | Z Axis Motor AMP is not Servo On
+2028 | 2028 | 10002028 | 20002028 | U Axis Motor AMP is not Servo On
+2029 | 2029 | 10002029 | 20002029 | V Axis Motor AMP is not Servo On
+2031 | 2031 | 10002031 | 20002031 | X axis checked (-)limit sensor.
+2032 | 2032 | 10002032 | 20002032 | Y axis checked (-)limit sensor.
+2033 | 2033 | 10002033 | 20002033 | Z axis checked (-)limit sensor.
+2034 | 2034 | 10002034 | 20002034 | M axis checked (-)limit sensor.
+2036 | 2036 | 10002036 | 20002036 | X axis checked (+)limit sensor.
+2037 | 2037 | 10002037 | 20002037 | Y axis checked (+)limit sensor.
+2038 | 2038 | 10002038 | 20002038 | Z axis checked (+)limit sensor.
+2039 | 2039 | 10002039 | 20002039 | M axis checked (+)limit sensor.
+2041 | 2041 | 10002041 | 20002041 | Emergency status happened during homing.
+2042 | 2042 | 10002042 | 20002042 | Job file command position is above Motion Stroke Length.
+2045 | 2045 | 10002045 | 20002045 | Did not remove PCB of Inside NG_Buffer
+2046 | 2046 | 10002046 | 20002046 | Did not remove PCB of inside NG_Buffer

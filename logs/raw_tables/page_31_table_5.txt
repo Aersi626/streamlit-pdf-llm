@@ -1,0 +1,39 @@
+Page: 31, Table: 5, Caption: 8.5
+
+1050 | 1050 | 10001050 | 20001050 | PCB is jammed at REAR ENTRY IN sensor.
+1051 | 1051 | 10001051 | 20001051 | PCB did not arrive at REAR WORK OUT sensor.
+1052 | 1052 | 10001052 | 20001052 | PCB is jammed at REAR WORK OUT sensor.
+1053 | 1053 | 10001053 | 20001053 | PCB did not arrive at REART EXIT OUT sensor.
+1054 | 1054 | 10001054 | 20001054 | PCB is jammed at REAR EXIT OUT sensor.
+1055 | 1055 | 10001055 | 20001055 | There has some problem during PCB moving.
+1056 | 1056 | 10001056 | 20001056 | Conveyor Error Cleared.
+1057 | 1057 | 10001057 | 20001057 | REAR RACK1 CYLINDER UP SENSOR not checked.
+1058 | 1058 | 10001058 | 20001058 | REAR RACK1 CYLINDER UP SENSOR not released.
+1059 | 1059 | 10001059 | 20001059 | REAR RACK2 CYLINDER UP SENSOR not checked.
+1060 | 1060 | 10001060 | 20001060 | REAR RACK2 CYLINDER UP SENSOR not released.
+1088 | 1088 | 10001088 | 20001088 | There is a PCB between conveyors!
+1089 | 1089 | 10001089 | 20001089 | There is no PCB on Work Converyor!
+1091 | 1091 | 10001091 | 20001091 | Bad Marking Cylinder shows false movements!
+1093 | 1093 | 10001093 | 20001093 | PCB detected on conveyors!
+1100 | 1100 | 10001100 | 20001100 | PCB failed to arrive at MR EXIT CHECK sensor!
+1101 | 1101 | 10001101 | 20001101 | PCB failed to arrive at MR EXIT IN sensor!
+1102 | 1102 | 10001102 | 20001102 | PCB failed to pass MR EXIT IN sensor!
+1103 | 1103 | 10001103 | 20001103 | PCB failed to arrive at MR EXIT OUT sensor!
+1104 | 1104 | 10001104 | 20001104 | PCB failed to pass MR EXIT IN sensor!
+1105 | 1105 | 10001105 | 20001105 | NG_PCB does not exist in MODE
+1106 | 1106 | 10001106 | 20001106 | PCB is located at wrong position in Multi Rack
+1107 | 1107 | 10001107 | 20001107 | GOOD_PCB did not become compulsorily the discharge in MODE
+1108 | 1108 | 10001108 | 20001108 | WORK IN/OUT sensors detected PCB at the same time!
+1109 | 1109 | 10001109 | 20001109 | PCB check sensor at Exit Conveyor detected wrong object!
+1111 | 1111 | 10001111 | 20001111 | MR EXIT STOPPER Cyliner shows wrong movement!
+1112 | 1112 | 10001112 | 20001112 | MR EXIT IN Cylinder Off sensor failed to work!
+1113 | 1113 | 10001113 | 20001113 | MR EXIT IN Cylinder On sensor failed to work!
+1114 | 1114 | 10001114 | 20001114 | MR EXIT OUT Cylinder Off sensor failed to work!
+1115 | 1115 | 10001115 | 20001115 | MR EXIT OUT Cylinder On sensor failed to work!
+1117 | 1117 | 10001117 | 20001117 | There is no NG PCB in NG Rack!
+1119 | 1119 | 10001119 | 20001119 | Multi Rack is opened!
+1121 | 1121 | 10001121 | 20001121 | MR EXIT IN Sensor detected a PCB!
+1123 | 1123 | 10001123 | 20001123 | MR PCB IN Sensor detected a PCB!
+1125 | 1125 | 10001125 | 20001125 | MR EXIT BELT END Sensor detected a PCB!
+1127 | 1127 | 10001127 | 20001127 | MR EXIT OUT Sensor detected a PCB!
+1129 | 1129 | 10001129 | 20001129 | MR Z axis shows false movements!

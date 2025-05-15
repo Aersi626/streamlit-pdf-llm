@@ -1,0 +1,19 @@
+Page: 42, Table: 6, Caption: 8.6
+
+ | ID |  |  | Name |  |  | Description |  |  | Associated DVs
+0 | [None] | [None] | ControlStateLocal | [None] | [None] | Control State Machine switched to local
+(operator) control. | [None] | [None] |  | [None]
+1 | [None] | [None] | ControlStateRemote | [None] | [None] | Control State Machine switched to remote
+(host) control. | [None] | [None] |  | [None]
+2 | [None] | [None] | EquipmentOffline | [None] | [None] | Control State Machine switched to the
+offline state. | [None] | [None] |  | [None]
+3 | [None] | [None] | MaterialReceived | [None] | [None] | Material arrived to a port on the
+equipment. | [None] | [None] | LaneID(61004) | [None]
+4 | [None] | [None] | MaterialRemoved | [None] | [None] | Material departed from a port on the
+equipment. | [None] | [None] | LaneID(61004) | [None]
+5 | [None] | [None] | MessageRecognition | [None] | [None] | Machine operator recognized a terminal
+service message from the host. Triggered
+when the client application calls
+RecognizeTerminalMsg(). | [None] | [None] |  | [None]
+6 | [None] | [None] | OperatorCommandIssued | [None] | [None] | Machine operator issued a control
+command. | [None] | [None] | OperatorCommand(6) | [None]

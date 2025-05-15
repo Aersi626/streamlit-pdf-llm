@@ -1,0 +1,23 @@
+Page: 3, Table: 0, Caption: 8.1.2
+
+ | HSMS message before a
+communications failure is declared. |  |  | 
+linktest | The linktest timeout is the amount
+of time between successive
+transmissions HSMS
+LINKTEST.REQ messages. This is
+an HSMS level heartbeat that can be
+used to detect communications
+hardware failure such as a
+disconnected network cable. | 1-240 seconds | 1 msec | 60 seconds
+AUTOS9F1 | This is an optional setting.
+Including AUTOS9F1 will cause an
+S9F1 Invalid Device-ID message to
+be transmitted whenever a message
+is received with a device ID that
+does not match the Device ID of the
+equipment. |  |  | AUTOS9F1
+AUTOS9F9 | Including AUTOS9F9 will cause
+S9F9 Transaction Timer Timeout
+messages to be sent whenever a T3
+timer expires. |  |  | AUTOS9F9

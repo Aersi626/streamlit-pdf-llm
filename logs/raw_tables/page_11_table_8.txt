@@ -1,0 +1,30 @@
+Page: 11, Table: 8, Caption: 8.5 Alarms
+Machine Type
+
+ID | Name | Set CE | Clear CE | Text
+2 | 2 | 10000002 | 20000002 | Fiducial Error
+6 | 6 | 10000006 | 20000006 | Defect pad on this PCB!
+7 | 7 | 10000007 | 20000007 | Entry Converyor Loading failed!
+8 | 8 | 10000008 | 20000008 | Work Converyor Loading failed!
+9 | 9 | 10000009 | 20000009 | Exit Converyor Loading failed!
+12 | 12 | 10000012 | 20000012 | PCB Loading/Unloading failed!
+13 | 13 | 10000013 | 20000013 | Manual Motion failed!
+14 | 14 | 10000014 | 20000014 | Air Pressure Level is too low!
+17 | 17 | 10000017 | 20000017 | Failed to adjust Entry Converyor Width!
+18 | 18 | 10000018 | 20000018 | Failed to adjust Work Converyor Width!
+19 | 19 | 10000019 | 20000019 | Failed to adjust Exit Converyor Width!
+20 | 20 | 10000020 | 20000020 | Error not defined.
+21 | 21 | 10000021 | 20000021 | Failed to find the Fiducials!
+22 | 22 | 10000022 | 20000022 | PCB has too much Rotation.
+23 | 23 | 10000023 | 20000023 | Failed to find the Fiducials after job changing!
+27 | 27 | 10000027 | 20000027 | Control Power is off.
+31 | 31 | 10000031 | 20000031 | DB Result Write Error
+32 | 32 | 10000032 | 20000032 | Barcode recognize failure
+34 | 34 | 10000034 | 20000034 | Camera Captur Error
+35 | 35 | 10000035 | 20000035 | Return messages not received from the MES
+36 | 36 | 10000036 | 20000036 | Receive NG Return from the MES
+37 | 37 | 10000037 | 20000037 | Barcode recognize failure
+38 | 38 | 10000038 | 20000038 | Configurable Stop
+39 | 39 | 10000039 | 20000039 | Result DB Write TimeOut
+40 | 40 | 10000040 | 20000040 | Result week DB creation Error
+50 | 50 | 10000050 | 20000050 | DS Connection failure

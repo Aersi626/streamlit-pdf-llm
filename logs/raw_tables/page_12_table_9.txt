@@ -1,0 +1,40 @@
+Page: 12, Table: 9, Caption: 8.5 Alarms
+Machine Type
+
+52 | 52 | 10000052 | 20000052 | DS Connection failure
+53 | 53 | 10000053 | 20000053 | Out of Memory Error
+54 | 54 | 10000054 | 20000054 | DS case definition used for the completion of Error
+55 | 55 | 10000055 | 20000055 | KYMessanger connection failure
+56 | 56 | 10000056 | 20000056 | Coverage Report File Write Error
+60 | 60 | 10000060 | 20000060 | Vision Processing barcode processing Error
+900 | 900 | 10000900 | 20000900 | There is a PCB in the Multi Rack!
+901 | 901 | 10000901 | 20000901 | NG Rack is full of PCBs!
+902 | 902 | 10000902 | 20000902 | There is a PCB in NG Rack!
+903 | 903 | 10000903 | 20000903 | Not registered BBT-Vendor name!
+904 | 904 | 10000904 | 20000904 | No Multi-Vendor Teaching (position) value!
+905 | 905 | 10000905 | 20000905 | No BBT information registered!
+906 | 906 | 10000906 | 20000906 | There are some problems about PZT Movement.
+907 | 907 | 10000907 | 20000907 | The gray Level of left image's brightness is less 10.
+908 | 908 | 10000908 | 20000908 | The gray Level of right image's brightness is less 10.
+909 | 909 | 10000909 | 20000909 | A software error such as memory allocation is occured during the
+inspecting
+910 | 910 | 10000910 | 20000910 | Fiducial Inspection Error
+911 | 911 | 10000911 | 20000911 | MEMORY ALLOCATION Error
+912 | 912 | 10000912 | 20000912 | Inspection Result Reading Error
+999 | 999 | 10000999 | 20000999 | There are PCBs in Multi Rack!
+1000 | 1000 | 10001000 | 20001000 | PCB failed to arrive at ENTRY IN sensor!
+1001 | 1001 | 10001001 | 20001001 | PCB failed to pass ENTRY IN sensor!
+1002 | 1002 | 10001002 | 20001002 | PCB failed to arrive at ENTRY OUT sensor!
+1003 | 1003 | 10001003 | 20001003 | PCB failed to pass ENTRY OUT sensor!
+1004 | 1004 | 10001004 | 20001004 | Work IN sensor failed to detect PCB!
+1005 | 1005 | 10001005 | 20001005 | PCB failed to arrive at WORK SLOW sensor!
+1006 | 1006 | 10001006 | 20001006 | PCB failed to arrive at WORK OUT sensor!
+1007 | 1007 | 10001007 | 20001007 | PCB failed to pass WORK OUT sensor!
+1008 | 1008 | 10001008 | 20001008 | WORK IN/OUT sensors detected PCB at the same time!
+1009 | 1009 | 10001009 | 20001009 | EXIT IN sensor failed to detect PCB!
+1010 | 1010 | 10001010 | 20001010 | PCB failed to pass EXIT IN sensor!
+1011 | 1011 | 10001011 | 20001011 | PCB failed to arrive at EXIT OUT sensor!
+1012 | 1012 | 10001012 | 20001012 | PCB failed to pass EXIT OUT sensor!
+1013 | 1013 | 10001013 | 20001013 | Stencil needs to be replaced!
+1014 | 1014 | 10001014 | 20001014 | PCB did not arrive at FRONT ENTRY IN sensor.
+1015 | 1015 | 10001015 | 20001015 | PCB is jammed at FRONT ENTRY IN sensor.

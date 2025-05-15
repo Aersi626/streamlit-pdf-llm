@@ -1,0 +1,40 @@
+Page: 15, Table: 9, Caption: 8.5 Alarms
+Machine Type
+
+1148 | 1148 | 10001148 | 20001148 | FRONT RACK is full by NG PCB.
+1151 | 1151 | 10001151 | 20001151 | PCB failed to pass REAR RACK1 BUFFER IN sensor.
+1152 | 1152 | 10001152 | 20001152 | PCB did not arrive at REAR RACK1 BUFFER OUT sensor.
+1153 | 1153 | 10001153 | 20001153 | PCB failed to pass REAR RACK1 BUFFER OUT sensor.
+1154 | 1154 | 10001154 | 20001154 | Unknown PCB is detected in REAR RACK1 BUFFER sensor.
+1155 | 1155 | 10001155 | 20001155 | Unknown PCB is detected in REAR RACK2 BUFFER sensor.
+1156 | 1156 | 10001156 | 20001156 | PCB is removed in REAR RACK1 BUFFER sensor.
+1157 | 1157 | 10001157 | 20001157 | PCB is removed in REAR RACK2 BUFFER sensor.
+1158 | 1158 | 10001158 | 20001158 | REAR RACK is full by NG PCB.
+1161 | 1161 | 10001161 | 20001161 | PCB did not arrive at FRONT ENTRY IN sensor.
+1162 | 1162 | 10001162 | 20001162 | PCB is jammed at FRONT ENTRY IN sensor.
+1163 | 1163 | 10001163 | 20001163 | PCB did not arrive at FRONT ENTRY OUT sensor.
+1164 | 1164 | 10001164 | 20001164 | PCB is jammed at FRONT ENTRY OUT sensor.
+1165 | 1165 | 10001165 | 20001165 | PCB did not arrive at FRONT WORK IN sensor.
+1166 | 1166 | 10001166 | 20001166 | PCB is jammed at FRONT WORK IN sensor.
+1167 | 1167 | 10001167 | 20001167 | PCB did not arrive at FRONT WORK OUT sensor.
+1168 | 1168 | 10001168 | 20001168 | PCB is jammed at FRONT WORK OUT sensor.
+1169 | 1169 | 10001169 | 20001169 | PCB did not arrive at FRONT EXIT IN sensor.
+1170 | 1170 | 10001170 | 20001170 | PCB is jammed at FRONT EXIT IN sensor.
+1171 | 1171 | 10001171 | 20001171 | PCB did not arrive at FRONT EXIT OUT sensor.
+1172 | 1172 | 10001172 | 20001172 | PCB is jammed at FRONT EXIT OUT sensor.
+1173 | 1173 | 10001173 | 20001173 | There are two PCB on FRONT Conveyor.
+1178 | 1178 | 10001178 | 20001178 | There are PCB that for a long time waiting to FRONT
+CONVEYOR.
+1181 | 1181 | 10001181 | 20001181 | PCB did not arrive at REAR ENTRY IN sensor.
+1182 | 1182 | 10001182 | 20001182 | PCB is jammed at REAR ENTRY IN sensor.
+1183 | 1183 | 10001183 | 20001183 | PCB did not arrive at REAR ENTRY OUT sensor.
+1184 | 1184 | 10001184 | 20001184 | PCB is jammed at REAR ENTRY OUT sensor.
+1185 | 1185 | 10001185 | 20001185 | PCB did not arrive at REAR WORK IN sensor.
+1186 | 1186 | 10001186 | 20001186 | PCB is jammed at REAR WORK IN sensor.
+1187 | 1187 | 10001187 | 20001187 | PCB did not arrive at REAR WORK OUT sensor.
+1188 | 1188 | 10001188 | 20001188 | PCB is jammed at REAR WORK OUT sensor.
+1189 | 1189 | 10001189 | 20001189 | PCB did not arrive at REAR EXIT IN sensor.
+1190 | 1190 | 10001190 | 20001190 | PCB is jammed at REAR EXIT IN sensor.
+1191 | 1191 | 10001191 | 20001191 | PCB did not arrive at REAR EXIT OUT sensor.
+1192 | 1192 | 10001192 | 20001192 | PCB is jammed at REAR EXIT OUT sensor.
+1193 | 1193 | 10001193 | 20001193 | There are two PCB on REAR Conveyor.

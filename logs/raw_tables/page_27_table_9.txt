@@ -1,0 +1,12 @@
+Page: 27, Table: 9, Caption: 8.5 Alarms
+Machine Type
+
+ID | Name | Set CE |  | Clear |  | Text
+[None] | [None] | [None] | [None] | CE | [None] | [None]
+2 | 2 | 10000002 | 20000002 | [None] | [None] | Fiducial Error
+6 | 6 | 10000006 | 20000006 | [None] | [None] | Defect pad on this PCB!
+7 | 7 | 10000007 | 20000007 | [None] | [None] | Entry Converyor Loading failed!
+8 | 8 | 10000008 | 20000008 | [None] | [None] | Work Converyor Loading failed!
+9 | 9 | 10000009 | 20000009 | [None] | [None] | Exit Converyor Loading failed!
+12 | 12 | 10000012 | 20000012 | [None] | [None] | PCB Loading/Unloading failed!
+13 | 13 | 10000013 | 20000013 | [None] | [None] | Manual Motion failed!

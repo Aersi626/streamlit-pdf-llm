@@ -1,0 +1,29 @@
+Page: 44, Table: 11, Caption: 8.7 Remote Commands
+Name Arguments Processing Description
+
+Name | Arguments | [None] | Processing
+States | Description
+[None] | Name
+(ASCII) | Value
+(ASCII) | [None] | [None]
+CSTOP |  |  | PROCESSING | Command to cycle stop Machine.
+PP-SELECT | PPID
+LANE | <ppid>
+<land> | IDLE | This command instructs the equipment to
+make the requested process program(s)
+available in the execution area. The process
+programs (PPID) are specified via the
+command parameter list. A status variable
+contains the PPID of the process program(s)
+currently selected.
+The "LANE" argument is optional. Add
+“LANE” argument when you need change the
+recipe at lane2 (0:Lane1, 1:Lane2)
+START |  |  | READY
+IDLE | This command is available to the host when a
+process program has been selected and the
+equipment is in the "ready" processing state.
+The START command instructs the
+equipment to initiate processing.
+STOP |  |  | READY
+PROCESSING | Command to stop Machine

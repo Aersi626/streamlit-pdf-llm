@@ -1,0 +1,46 @@
+Page: 8, Table: 5, Caption: 4000 EstablishCommunicationsTimeout U2 EC U2
+
+2036 | CommState | U4 | SV | U4 0 | U4
+4294967295 | The current state of the GEM
+communications state machine
+where 0 = disabled 260 =
+communicating 273 =
+WaitCRA | WaitCRFromHost
+and 274 = WaitDelay |
+WaitCRFromHost.
+2037 | SpoolState | U4 | SV | U4 0 | U4
+4294967295 | The current state of the GEM
+spooling state machine where 0
+= inactive 273 =
+NoSpoolOutput | SpoolNotFull
+274 = TransmitSpool |
+SpoolNotFull 276 =
+PurgeSpool | SpoolNotFull 289
+= NoSpoolOutput | SpoolFull
+290 = TransmitSpool |
+SpoolFull 292 = PurgeSpool |
+SpoolFull.
+2050 | ASer | U4 | SV | U4 0 | U4
+4294967295 | The alarm state change count
+since startup.
+2051 | Time | A | SV |  |  | Equipment computer date and
+time. The format is determined
+by the equipment constant
+TimeFormat.
+2054 | AlarmState | U1 | SV | U1 0 | U1 255 | State of the alarm that last
+changed state since
+startup(128=SET 0=CLEAR
+null=no alarm state change).
+2056 | PPFormat | U1 | SV | U1 1 | U1 16 | Indicates the type or types of
+process programs and recipes
+that are supported
+4030 | PreviousControlState | U1 | SV | U1 0 | U1 255 | The previous state of the
+Control State Machine. Values
+include 1=EquipOffline
+2=AttemptOnline
+3=HostOffline 4=OnlineLocal
+and 5=OnlineRemote.
+61001 | UserID | A | SV | A | A | Current login User ID
+61002 | LotID | L | SV | L | L | Current Lot ID of each lane.
+Frist ASCII is Lane1, Second
+ASCII is Lane2.

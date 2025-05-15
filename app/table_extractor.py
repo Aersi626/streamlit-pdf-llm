@@ -37,6 +37,14 @@ def fix_multirow_header(rows: list[list[str]], expected_min_cols: int = 4, max_r
     else:
         return rows[0], rows[1:]
 
+def log_raw_table(table: list[list[str]], page_num: int, table_idx: int, caption: str = "", log_dir="logs/raw_tables"):
+        os.makedirs(log_dir, exist_ok=True)
+        filename = os.path.join(log_dir, f"page_{page_num}_table_{table_idx}.txt")
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write(f"Page: {page_num}, Table: {table_idx}, Caption: {caption}\n\n")
+            for row in table:
+                f.write(" | ".join(str(cell) if cell is not None else "[None]" for cell in row) + "\n")
+
 def extract_tables_from_pdf(pdf_path: str) -> List[Tuple[pd.DataFrame, int, int, str]]:
     """
     Extracts tables and assigns them to the most recent section heading.
@@ -60,15 +68,23 @@ def extract_tables_from_pdf(pdf_path: str) -> List[Tuple[pd.DataFrame, int, int,
             text = page.extract_text() or ""
             section_matches = section_heading_pattern.findall(text)
 
-            # Use the last matched section heading on the page (if any)
-            # Rebuild full captions like "8.3 Status Variables"
-            captions = [f"{sec_num} {title}".strip() for sec_num, title in section_matches]
-            section_caption = captions[-1] if captions else current_caption  # fallback to last used
+            section_key = None
+            for sec, _ in section_matches:
+                if sec in HEADER_CONFIG:
+                    section_key = sec
+                    break  # use the first matching section key found
+            section_caption = section_key if section_key else current_caption
 
             page_tables = page.extract_tables()
             for table in page_tables:
-                if not table or len(table) < 2:
+                print(f"🔍 Processing table {table_index} on page {page_num} under caption: {section_caption}")
+                log_raw_table(table, page_num, table_index, section_caption or "Unknown")
+
+                if not table or len(table) < 2 or not any(cell for row in table for cell in row):
+                    print(f"⚠️ Skipping empty or malformed table {table_index} on page {page_num}")
                     continue
+
+                print(f"🔎 Raw first row of table {table_index} on page {page_num}: {table[0]}")
 
                 section_key = extract_section_key(section_caption or "")
                 known_header = HEADER_CONFIG.get(section_key)
@@ -80,6 +96,16 @@ def extract_tables_from_pdf(pdf_path: str) -> List[Tuple[pd.DataFrame, int, int,
                     print(f"⚠️ Using known header for section {section_key}: {maybe_header}")
                 else:
                     if len([c for c in table[0] if c and c.strip()]) < 3:
+                        maybe_header, rest_rows = fix_multirow_header(table)
+                    else:
+                        maybe_header = table[0]
+                        rest_rows = table[1:]
+
+                if not maybe_header or not any(c.strip() for c in maybe_header if c):
+                    print(f"❌ Invalid or empty header detected at page {page_num}, table {table_index}")
+                    continue
+                else:
+                    if sum(1 for c in table[0] if c and str(c).strip()) < 3:
                         maybe_header, rest_rows = fix_multirow_header(table)
                     else:
                         maybe_header = table[0]
@@ -110,8 +136,12 @@ def extract_tables_from_pdf(pdf_path: str) -> List[Tuple[pd.DataFrame, int, int,
                         current_rows.extend(table)
 
     if current_rows:
-        df = pd.DataFrame(current_rows, columns=current_header)
-        tables.append((df, start_page, table_index, current_caption))
+        cleaned_rows = [row for row in current_rows if len(row) == len(current_header)]
+        if cleaned_rows:
+            df = pd.DataFrame(cleaned_rows, columns=current_header)
+            tables.append((df, start_page, table_index, current_caption))
+        else:
+            print(f"⚠️ No clean rows found for table {table_index} on page {start_page}")
 
     return tables
 

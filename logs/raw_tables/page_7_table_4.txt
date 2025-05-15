@@ -1,0 +1,58 @@
+Page: 7, Table: 4, Caption: 2034 CtrlOnlineSwitch U4 SV U4
+
+2008 | MDLN | A | SV | A | A | Equipment model type up to 20
+characters. The value is
+constant.
+2009 | PPExecName | L | SV | L | L | Currently selected process
+program (recipe). This process
+program (recipe) can not be
+deleted or overwritten by the
+host since it is considered to be
+in use. Frist ASCII is Lane1,
+Second ASCII is Lane2.
+2015 | SOFTREV | A | SV | A | A | Equipment software revision
+ID up to 20 characters. The
+value is constant.
+2016 | SpoolCountActual | U4 | SV | U4 0 | U4
+4294967295 | Number of messages actually
+stored in the spool area. Multi-
+block inquire/grant messages
+are not included in this count.
+2017 | SpoolCountTotal | U4 | SV | U4 0 | U4
+4294967295 | Total number of messages put
+into spool area from the time
+spooling was activated. Multi-
+block inquire/grant messages
+are not included in this count.
+2018 | SpoolFullTime | A | SV | A | A | Time when the spooling state
+machine area becomes full. The
+format is determined by the
+equipment constant
+TimeFormat.
+2019 | SpoolStartTime | A | SV | A | A | Time when the spooling state
+machine was last activated. The
+format is determined by the
+equipment constant
+TimeFormat.
+2026 | ALARMSENABLED | L | SV | L | L | List of all enabled ALID.
+2027 | ALARMSSET | L | SV | L | L | List of all currently SET
+ALIDs.
+2028 | CONTROLSTATE | U1 | SV | U1 0 | U1 5 | State of the Control State
+Machine. Possible values
+include 1=EquipOffline
+2=AttemptOnline
+3=HostOffline 4=OnlineLocal
+and 5=OnlineRemote.
+2029 | EVENTSENABLED | L | SV | L | L | List of all enabled CEID.
+2030 | PREVIOUSPROCESSSTATE | U1 | SV | U1 0 | U1 255 | Previous Processing State
+Machine state.
+2031 | PROCESSSTATE | U1 | SV | U1 0 | U1 255 | Current Processing State
+Machine state.
+2032 | ProcessState | A | SV | A | A | Name of the current Processing
+State Machine state.
+2033 | ControlStateSwitch | U4 | SV | U4 0 | U4 1 | The GEM local/remote control
+switch where 0 = local and 1 =
+remote.
+2034 | CtrlOnlineSwitch | U4 | SV | U4 0 | U4 1 | The GEM online/offline control
+switch where 0 = offline and 1
+= online.

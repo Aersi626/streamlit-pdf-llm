@@ -1,0 +1,39 @@
+Page: 21, Table: 5, Caption: 8.5
+
+2813 | 2813 | 10002813 | 20002813 | Lane1 flip stage elevator Axis shows false movements! ( Moving )
+2814 | 2814 | 10002814 | 20002814 | Lane1 flip stage bridge cylinder shows false movements!
+2815 | 2815 | 10002815 | 20002815 | Lane1 flip stage gear cylinder shows false movements!
+2816 | 2816 | 10002816 | 20002816 | Unknown PCB is detected in lane1.
+2817 | 2817 | 10002817 | 20002817 | Lane2 entry plate up/down cylinder shows false movements!
+2818 | 2818 | 10002818 | 20002818 | Lane2 entry turn cylinder shows false movements!
+2819 | 2819 | 10002819 | 20002819 | Lane2 flip stage elevator Axis shows false movements!
+( Homming )
+2820 | 2820 | 10002820 | 20002820 | Lane2 flip stage elevator Axis shows false movements! ( Moving )
+2821 | 2821 | 10002821 | 20002821 | Lane2 flip stage bridge cylinder shows false movements!
+2822 | 2822 | 10002822 | 20002822 | Lane2 flip stage gear cylinder shows false movements!
+2823 | 2823 | 10002823 | 20002823 | Unknown PCB is detected in lane2.
+2824 | 2824 | 10002824 | 20002824 | Flip stage elevator Axis shows false movements!
+2825 | 2825 | 10002825 | 20002825 | Conveyor sensor detected.
+2826 | 2826 | 10002826 | 20002826 | L1_FLIPPER Axis S/W (-)limit error!
+2827 | 2827 | 10002827 | 20002827 | L1_FLIPPER Axis S/W (+)limit error!
+2828 | 2828 | 10002828 | 20002828 | L1_FLIPPER Axis motion Parameter (-)Limit error!
+2829 | 2829 | 10002829 | 20002829 | L1_FLIPPER Axis motion Parameter (+)Limit error!
+2830 | 2830 | 10002830 | 20002830 | L1_FLIPPER Axis position overflow error!
+2831 | 2831 | 10002831 | 20002831 | L1_FLIPPER Axis over current error!
+2832 | 2832 | 10002832 | 20002832 | L1_FLIPPER Axis over speed error!
+2833 | 2833 | 10002833 | 20002833 | L1_FLIPPER Axis position tracking error!
+2834 | 2834 | 10002834 | 20002834 | L1_FLIPPER Axis over load error!
+2835 | 2835 | 10002835 | 20002835 | L1_FLIPPER Axis over heat error!
+2836 | 2836 | 10002836 | 20002836 | L1_FLIPPER Axis back EMF error!
+2837 | 2837 | 10002837 | 20002837 | L1_FLIPPER Axis motor power error!
+2838 | 2838 | 10002838 | 20002838 | L1_FLIPPER Axis inposition error!
+2839 | 2839 | 10002839 | 20002839 | L1_FLIPPER Axis EMG status!
+2840 | 2840 | 10002840 | 20002840 | L1_FLIPPER Axis step out error!
+2841 | 2841 | 10002841 | 20002841 | L1_FLIPPER Axis over temp error!
+2842 | 2842 | 10002842 | 20002842 | L1_FLIPPER Axis motor connect error!
+2843 | 2843 | 10002843 | 20002843 | L1_FLIPPER Axis encoder connect error!
+2844 | 2844 | 10002844 | 20002844 | L1_FLIPPER Axis system halt error!
+2845 | 2845 | 10002845 | 20002845 | L1_FLIPPER Axis rom device error!
+2846 | 2846 | 10002846 | 20002846 | L1_FLIPPER Axis rom device error!
+2847 | 2847 | 10002847 | 20002847 | L1_FLIPPER Axis error! ( all )
+2848 | 2848 | 10002848 | 20002848 | L1_FLIPPER Axis (+)limit error!

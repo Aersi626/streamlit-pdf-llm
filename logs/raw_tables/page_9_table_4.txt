@@ -1,0 +1,53 @@
+Page: 9, Table: 4, Caption: 8.4
+
+4009 | OverwriteSpool | Bo | EC | Bo 0 | Bo 1 | Bo 0 | Determines whether to overwrite
+data in the spool area or to discard
+further messages when the spool
+area is full as part of the Spooling
+State Machine. Possible values
+include 1 (overwrite) and 0 (discard).
+4010 | SpoolEnabled | Bo | EC | Bo 0 | Bo 1 | Bo 0 | Enable or disable the Spooling State
+Machine. Disabling the Spooling
+State Machine will not make it
+INACTIVE if already ACTIVE.
+Possible values include 1 (enabled)
+and 0 (disabled).
+4011 | WBitS10 | Bo | EC | Bo 0 | Bo 1 | Bo 1 | Request host reply for stream 10
+messages (Terminal Services).
+Possible values include 1 (reply) 0
+(no reply).
+4012 | WBitS5 | Bo | EC | Bo 0 | Bo 1 | Bo 1 | Request host reply for stream 5
+messages (Alarms). Possible values
+include 1 (reply) 0 (no reply).
+4013 | WBitS6 | Bo | EC | Bo 0 | Bo 1 | Bo 1 | Request host reply for stream 6
+messages (Events). If the machine is
+producing frequent collection events
+it may be a good idea to disable
+request reply. Possible values
+include 1 (reply) 0 (no reply).
+4020 | TimeFormat | U4 | EC | U4 0 | U4 2 | U4 1 | Time format selection. Possible
+values include 1 (compliant 16 byte);
+0 (not compliant 12 byte) and 2
+(Extended YYYY-MM-
+DDThh:mm:ss.sTZD). Depends on
+ExtendedTimeFormat when set to 2.
+4021 | DefCtrlOfflineState | U1 | EC | U1 1 | U1 3 | U1 3 | State of the Control State Machine
+when going offline. Possible values
+include 1 = Equipment Offline 3 =
+Host Offline.
+4022 | EventReportMsg | U4 | EC | U4 0 | U4
+4294967295 | U4
+67083 | Specifies the event report message.
+Possible values include 67083
+(S6F11) 67075 (S6F3) 67085
+(S6F13).
+4023 | DefaultCommState | U4 | EC | U4 0 | U4 256 | U4 256 | The default state of the GEM
+communications state machine
+where 0 = disabled and 256 =
+enabled.
+4024 | DefaultCtrlState | U1 | EC | U1 0 | U1 5 | U1 0 | The default state of the GEM control
+state machine: 0=Online where
+ControlStateSwitch determines the
+sub-state; 1=EquipOffline;
+2=AttemptOnline; 3=HostOffline;
+4=OnlineLocal; 5=OnlineRemote.

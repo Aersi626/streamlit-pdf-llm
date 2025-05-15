@@ -1,0 +1,42 @@
+Page: 6, Table: 2, Caption: 8.3
+
+2053 | ECChangeValue | Any | DV |  |  | The value of the equipment constant
+changed by the machine operator.
+2055 | CEDescription | A | DV | A | A | Description of the last collection
+event triggered.
+2058 | AlarmCode | Bi | DV | Bi 0 | Bi 255 | Alarm Code (ALCD) of the most
+recent alarm to change state. This
+may be linked to any alarm's SET or
+CLEAR collection event.
+2059 | AlarmText | A | DV | A | A | Alarm Text (ALTX) of the most
+recent alarm to change state. This
+may be linked to any alarm's SET or
+CLEAR collection event.
+2060 | ECPreviousValue | Any | DV |  |  | The value of the equipment constant
+before it was changed by the
+machine operator.
+4027 | LastCEID | U4 | DV | U4 0 | U4
+4294967295 | The last triggered CEID.
+4029 | DataID | U4 | DV | U4 0 | U4
+4294967295 | The last value of DATAID used in a
+SECS-II message.
+60001 | EventTime | A | DV | A | A 16 | Event DataTime
+60002 | PCBResult | A | DV | A | A 10 | Inspection result of pcb
+(GOOD/NG/PASS)
+60003 | PanelResult | A | DV | A | A 50000 | Inspetion Result of each
+Array(Panel)
+0 : Good/Pass
+1 : NG
+B : BadMark (Scrap)
+60004 | PCBID | A | DV | A | A 255 | Barcode Name
+60005 | PCBSide | A | DV | A | A 1 | Inspection side of pcb (T or B)
+60006 | ProgramName | A | DV | A | A 255 | Program recipe Name
+60007 | RAWDATA | A | DV | A | A 16M | Inspection Result NG data
+AOI : ArrayIndex, CRD,
+PackageName, InspectType, LeadID,
+Result\n….
+SPI : PadID, PanelIndex,
+CompName, PadResult, Volume(%),
+Height(um), OffsetX(um),
+OffsetY(um), Area(%)\n….
+61004 | LaneID | A | DV | U1 0 | U1 1 | Current Lane ID of Event

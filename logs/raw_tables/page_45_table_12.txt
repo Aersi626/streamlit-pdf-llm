@@ -1,0 +1,10 @@
+Page: 45, Table: 12, Caption: 8.9 GEM Interface Installation
+
+Name | Description
+Communication State | 
+Control State | 
+Incoming Terminal Services | 
+Processing State | 
+Current Recipe | 
+Spooling | 
+Alarms | 

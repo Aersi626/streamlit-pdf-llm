@@ -1,0 +1,9 @@
+Page: 8, Table: 4, Caption: 8.4
+
+ID | Name | Type | Unit | Min | Max | Default | Description
+4000 | EstablishCommunicationsTimeout | U2 | EC | U2 0 | U2 65535 | U2 10 | Communication attempt timeout.
+When the Communication State
+Machine is enabled but not
+communicating the machine will
+attempt to establish communication
+with a host every timeout period.

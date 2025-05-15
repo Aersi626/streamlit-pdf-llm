@@ -1,0 +1,40 @@
+Page: 37, Table: 9, Caption: 8.5 Alarms
+Machine Type
+
+2650 | 2650 | 10002650 | 20002650 | Long BarCodeTeaching Error
+2651 | 2651 | 10002651 | 20002651 | Max Warpage Limit Error
+2652 | 2652 | 10002652 | 20002652 | Board Inspection TimeOut Error
+2653 | 2653 | 10002653 | 20002653 | Max Shrinkage Limit Error
+2661 | 2661 | 10002661 | 20002661 | Conveyor Rail1 Checked Home Sensor.
+2662 | 2662 | 10002662 | 20002662 | Conveyor Rail2 Checked Home Sensor.
+2663 | 2663 | 10002663 | 20002663 | Conveyor Rail3 Checked Home Sensor.
+2664 | 2664 | 10002664 | 20002664 | Conveyor Rail4 Checked Home Sensor.
+2665 | 2665 | 10002665 | 20002665 | Change Downstream Conveyor adjust timeout error.
+2666 | 2666 | 10002666 | 20002666 | It is Upstream EMG.
+2667 | 2667 | 10002667 | 20002667 | It is Downstream EMG.
+2668 | 2668 | 10002668 | 20002668 | PCB did not arrive at Work OUT sensor from Entry.
+2669 | 2669 | 10002669 | 20002669 | Current conveyor width is same as set PCB width.
+2670 | 2670 | 10002670 | 20002670 | PCB verification result time out error.
+2671 | 2671 | 10002671 | 20002671 | Door Lock error
+2672 | 2672 | 10002672 | 20002672 | Entry Conv Width Limit error
+2673 | 2673 | 10002673 | 20002673 | Work Conv Width Limit error
+2674 | 2674 | 10002674 | 20002674 | Exit Conv Width Limit error
+2675 | 2675 | 10002675 | 20002675 | There is not inspected PCB.
+2676 | 2676 | 10002676 | 20002676 | Inspection result is NG.
+2677 | 2677 | 10002677 | 20002677 | Vacuum pressure sensor is not detected.
+2678 | 2678 | 10002678 | 20002678 | Vacuum pressure sensor is not turned off.
+2679 | 2679 | 10002679 | 20002679 | Lane1 P Machine Info Ack Timeout Error
+2680 | 2680 | 10002680 | 20002680 | Lane2 P Machine Info Ack Timeout Error
+2681 | 2681 | 10002681 | 20002681 | Barcode Shuttle Limit Sensor Error.
+2682 | 2682 | 10002682 | 20002682 | Barcode Shuttle located Home.
+2683 | 2683 | 10002683 | 20002683 | Barcode Shuttle does not operate normally.
+2684 | 2684 | 10002684 | 20002684 | Barcode Shuttle command exceeds the maximum value set.
+2685 | 2685 | 10002685 | 20002685 | Barcode Shuttle command less the minimum value set.
+2686 | 2686 | 10002686 | 20002686 | Dispenser Purge error.
+2687 | 2687 | 10002687 | 20002687 | Dispenser Syringe air pressure limit error.
+2701 | 2701 | 10002701 | 20002701 | The Back-up Plate Clamp is open
+2711 | 2711 | 10002711 | 20002711 | Lane1 Height Guide Sensor Error
+2712 | 2712 | 10002712 | 20002712 | Lane2 Height Guide Sensor Error
+2713 | 2713 | 10002713 | 20002713 | Conveyor Home Move exceeded the time.
+2714 | 2714 | 10002714 | 20002714 | Flipper Home Move exceeded the time.
+2715 | 2715 | 10002715 | 20002715 | Flipper Move exceeded the time.

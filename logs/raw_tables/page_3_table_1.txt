@@ -1,0 +1,39 @@
+Page: 3, Table: 1, Caption: 8.1.2
+
+Parameter | Description | Range | Resolution | Typical value
+Serial
+Communication
+Hardware |  |  |  | 
+Device ID | The device-id identifies the equipment
+and will be assigned by the factory. | 0 to 32767 | 1 | 32767
+Comm Port | The com port is the RS232 port to use.
+CxSMS will support com port numbers
+higher than 9 such as COM10, COM11,
+etc. | COM1, COM2, etc |  | COM1
+Baud Rate | The RS232 serial line speed to use. | 300, 1200, 2400,
+3600, 4800, 9600,
+14400, 19200,
+38400, 57600,
+115200 |  | 9600
+T1 | The T1 timeout is the inter-character
+timeout. This is the maximum amount
+of time between characters in a message
+before a communications failure is
+declared. | 0.1 – 10 seconds | 1 msec | 500
+T2 | The T2 timeout is the protocol timeout.
+This is the maximum amount of time
+between protocol level messages and
+replies before a communications failure
+is declared. | 0.2 - 25.0 seconds | 1 msec | 10000
+T3 | The T3 timeout is the transaction timer.
+This is the maximum amount of time
+between a primary message and the
+expected response before declaring the
+transaction closed. If the timer expires,
+an S9F9 error message is sent if
+AUTOS9F9 is specified. | 1 - 120 seconds | 1 msec | 45000
+T4 | The T4 timeout is the inter-block
+timeout and is the maximum amount of
+time allowed between successive blocks
+in a multi-block message before a
+communications failure is declared. | 1 - 120 seconds | 1 msec | 45000

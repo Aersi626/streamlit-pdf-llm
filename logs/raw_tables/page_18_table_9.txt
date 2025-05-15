@@ -1,0 +1,40 @@
+Page: 18, Table: 9, Caption: 8.5 Alarms
+Machine Type
+
+2201 | 2201 | 10002201 | 20002201 | Conveyors are still moving.
+2203 | 2203 | 10002203 | 20002203 | Machine does not Move.
+2204 | 2204 | 10002204 | 20002204 | Machine Basic Setting is Changed.
+2300 | 2300 | 10002300 | 20002300 | Head StepServo Motor Amp is not in Servo On status.
+2301 | 2301 | 10002301 | 20002301 | Head StepServo Motor Postive Limit Error.
+2302 | 2302 | 10002302 | 20002302 | Lens StepServo Motor Amp is not Servo On.
+2303 | 2303 | 10002303 | 20002303 | Lens StepServo Motor Postive Limit Error.
+2304 | 2304 | 10002304 | 20002304 | StepZoom Motor Moving Time Out.
+2305 | 2305 | 10002305 | 20002305 | StepZoom Motor Following Error.
+2306 | 2306 | 10002306 | 20002306 | Head Motor Communication Error.
+2307 | 2307 | 10002307 | 20002307 | Lens Motor Communication Error.
+2308 | 2308 | 10002308 | 20002308 | Head StepServo Received Error.
+2309 | 2309 | 10002309 | 20002309 | Lens StepServo Received Error.
+2310 | 2310 | 10002310 | 20002310 | Conveyor Width Setting Value Error.
+2311 | 2311 | 10002311 | 20002311 | Conveyor Command Value is Under the Minimum Value.
+2312 | 2312 | 10002312 | 20002312 | Conveyor Command Value is Over the Maximum Value.
+2410 | 2410 | 10002410 | 20002410 | Front Lane UpStream SMEMA In Error.
+2411 | 2411 | 10002411 | 20002411 | Rear Lane UpStream SMEMA In Error.
+2412 | 2412 | 10002412 | 20002412 | Front Lane DownStream SMEMA In Error.
+2413 | 2413 | 10002413 | 20002413 | Rear Lane DownStream SMEMA In Error.
+2415 | 2415 | 10002415 | 20002415 | Conveyor Rail 1 & 2 Collision Error.
+2416 | 2416 | 10002416 | 20002416 | Conveyor Rail 2 & 3 Collision Error.
+2417 | 2417 | 10002417 | 20002417 | Conveyor Rail 3 & 4 Collision1 Error.
+2418 | 2418 | 10002418 | 20002418 | Conveyor Rail 3 & 4 Collision2 Error.
+2419 | 2419 | 10002419 | 20002419 | Conveyor Backup Unit Collision Error.
+2420 | 2420 | 10002420 | 20002420 | Rail1 Command is Collision Position against Rail2.
+2421 | 2421 | 10002421 | 20002421 | Rail2 Command is Collision Position against Rail1.
+2422 | 2422 | 10002422 | 20002422 | Rail2 Command is Collision Position against Rail3.
+2423 | 2423 | 10002423 | 20002423 | Rail3 Command is Collision Position against Rail2.
+2424 | 2424 | 10002424 | 20002424 | Rail3 Command is Collision Position against Rail4.
+2425 | 2425 | 10002425 | 20002425 | Rail4 Command is Collision Position against Rail3.
+2430 | 2430 | 10002430 | 20002430 | NG-PCB was not removed.
+2431 | 2431 | 10002431 | 20002431 | Checked Front Lane PCB Collision Sensor.
+2432 | 2432 | 10002432 | 20002432 | Checked Rear Lane PCB Collision Sensor.
+2433 | 2433 | 10002433 | 20002433 | Please Check GUI Error Message
+2434 | 2434 | 10002434 | 20002434 | Backup Pin Unit Setting is Changed.
+2435 | 2435 | 10002435 | 20002435 | Before Conveyor Width adjustment

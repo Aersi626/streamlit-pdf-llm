@@ -1,0 +1,39 @@
+Page: 30, Table: 5, Caption: 8.5
+
+1007 | 1007 | 10001007 | 20001007 | PCB failed to pass WORK OUT sensor!
+1008 | 1008 | 10001008 | 20001008 | WORK IN/OUT sensors detected PCB at the same time!
+1009 | 1009 | 10001009 | 20001009 | EXIT IN sensor failed to detect PCB!
+1010 | 1010 | 10001010 | 20001010 | PCB failed to pass EXIT IN sensor!
+1011 | 1011 | 10001011 | 20001011 | PCB failed to arrive at EXIT OUT sensor!
+1012 | 1012 | 10001012 | 20001012 | PCB failed to pass EXIT OUT sensor!
+1013 | 1013 | 10001013 | 20001013 | Stencil needs to be replaced!
+1014 | 1014 | 10001014 | 20001014 | PCB did not arrive at FRONT ENTRY IN sensor.
+1015 | 1015 | 10001015 | 20001015 | PCB is jammed at FRONT ENTRY IN sensor.
+1016 | 1016 | 10001016 | 20001016 | PCB did not arrive at FRONT WORK OUT sensor.
+1017 | 1017 | 10001017 | 20001017 | PCB is jammed at FRONT WORK OUT sensor.
+1018 | 1018 | 10001018 | 20001018 | PCB did not arrive at FRONT EXIT OUT sensor.
+1019 | 1019 | 10001019 | 20001019 | PCB is jammed at FRONT EXIT OUT sensor.
+1020 | 1020 | 10001020 | 20001020 | PCB did not arrive at REAR ENTRY IN sensor.
+1021 | 1021 | 10001021 | 20001021 | PCB is jammed at WORK IN sensor.
+1022 | 1022 | 10001022 | 20001022 | There is a problem in UpStream SMEMA In.
+1023 | 1023 | 10001023 | 20001023 | There is a problem with Upstream SMEMA Out.
+1024 | 1024 | 10001024 | 20001024 | There is a problem with DownStream SMEMA In.
+1025 | 1025 | 10001025 | 20001025 | There is a problem with DownStream SMEMA Out.
+1026 | 1026 | 10001026 | 20001026 | All of Rail Up and Down Sensor is detected.
+1028 | 1028 | 10001028 | 20001028 | None of Rail Up and Down Sensor is detected.
+1029 | 1029 | 10001029 | 20001029 | Twist Rail Up/Donw Sensor Cable.
+1031 | 1031 | 10001031 | 20001031 | FRONT ENTRY RAIL UP SENSOR not checked.
+1032 | 1032 | 10001032 | 20001032 | FRONT ENTRY RAIL DOWN SENSOR not checked.
+1033 | 1033 | 10001033 | 20001033 | FRONT WORK RAIL UP SENSOR not checked.
+1034 | 1034 | 10001034 | 20001034 | FRONT WORK RAIL DOWN SENSOR not checked.
+1035 | 1035 | 10001035 | 20001035 | FRONT EXIT RAIL UP SENSOR not checked.
+1036 | 1036 | 10001036 | 20001036 | FRONT EXIT RAIL DOWN SENSOR not checked.
+1037 | 1037 | 10001037 | 20001037 | FRONT RACK1 CYLINDER UP SENSOR not checked.
+1038 | 1038 | 10001038 | 20001038 | FRONT RACK1 CYLINDER UP SENSOR not released
+1039 | 1039 | 10001039 | 20001039 | FRONT RACK2 CYLINDER UP Sensors not checked.
+1040 | 1040 | 10001040 | 20001040 | FRONT RACK1 CYLINDER UP SENSOR not released
+1041 | 1041 | 10001041 | 20001041 | REAR ENTRY RAIL UP SENSOR not checked.
+1042 | 1042 | 10001042 | 20001042 | REAR ENTRY RAIL DOWN SENSOR not checked.
+1043 | 1043 | 10001043 | 20001043 | REAR WORK RAIL UP SENSOR not checked.
+1044 | 1044 | 10001044 | 20001044 | REAR WORK RAIL DOWN SENSOR not checked.
+1045 | 1045 | 10001045 | 20001045 | REAR EXIT RAIL UP SENSOR not checked.

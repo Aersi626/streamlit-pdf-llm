@@ -1,0 +1,46 @@
+Page: 26, Table: 9, Caption: 8.5 Alarms
+Machine Type
+
+3218 | 3218 | 10003218 | 20003218 | Failed to save ZScale factor image to make reference
+3219 | 3219 | 10003219 | 20003219 | Got wrong vendor index while teaching Multi-vendor
+3220 | 3220 | 10003220 | 20003220 | Got too large Image area for teaching Multi-vendor. Please set
+smaller area.
+3221 | 3221 | 10003221 | 20003221 | Got too large image area for teaching Bad mark.
+3222 | 3222 | 10003222 | 20003222 | Can not find CAM Barcode dongle key or MIL version does not
+match current CAM Barcode version.
+3223 | 3223 | 10003223 | 20003223 | Failed to allocate Vision memory for Job
+3224 | 3224 | 10003224 | 20003224 | Failed to load reference data at KSmart
+3225 | 3225 | 10003225 | 20003225 | Failed to load reference data
+3226 | 3226 | 10003226 | 20003226 | Please check [Use ZAxis Calibration] option in Setting ==> Vision
+==> ZCal tab
+3227 | 3227 | 10003227 | 20003227 | Failed to make Reference buffer
+3228 | 3228 | 10003228 | 20003228 | Error occured while creating reference data at Z-Calibration
+3229 | 3229 | 10003229 | 20003229 | Error occured while creating phase map at Z-Calibration
+3230 | 3230 | 10003230 | 20003230 | Error occured while creating leveled slope map at Z-Calibration
+3231 | 3231 | 10003231 | 20003231 | Error occured while creating non-leveled slope map at Z-
+Calibration
+3232 | 3232 | 10003232 | 20003232 | ZScale map out of range.(Detected particle scratch or target slope
+in sample) Please check Height calibration target an
+3233 | 3233 | 10003233 | 20003233 | Calibration paramter error
+3234 | 3234 | 10003234 | 20003234 | Please check [Use ZAxis Calibration] option in Setting ==> Vision
+==> ZCal tab
+3235 | 3235 | 10003235 | 20003235 | Timeout occured while waiting for Inspection target
+3236 | 3236 | 10003236 | 20003236 | Can not find CAM Barcode dongle key or MIL version does not
+match current CAM Barcode version.
+3237 | 3237 | 10003237 | 20003237 | Job file does not match GBBT data. Please teach GBBT again.
+3238 | 3238 | 10003238 | 20003238 | PWG called with PWG option turned off.
+3239 | 3239 | 10003239 | 20003239 | ROI boundary count has over limit.
+3240 | 3240 | 10003240 | 20003240 | Pad referencing run with RGB option turned off. Please turn on
+RGB option and try again.
+3241 | 3241 | 10003241 | 20003241 | GBBT option turned on but failed to load GBBT data from job
+file. Please teach GBBT at Bare board teaching wizard or tu
+3242 | 3242 | 10003242 | 20003242 | There is no FM Master Teaching Data or Job file does not match
+with teaching data.
+3243 | 3243 | 10003243 | 20003243 | The Graphic card is not for FM Inspection or Failed to load
+Foreign Material library
+3244 | 3244 | 10003244 | 20003244 | HALCON library error
+1000201 | 1000201 | 11000201 | 21000201 | 3D Reference Data does not exist!
+1000300 | 1000300 | 11000300 | 21000300 | Job file does not exist!
+1001100 | 1001100 | 11001100 | 21001100 | Inspection Error! Failed to get inspection result.
+1020100 | 1020100 | 11020100 | 21020100 | Not enough space to save data!
+1040300 | 1040300 | 11040300 | 21040300 | Input PAD ID again.

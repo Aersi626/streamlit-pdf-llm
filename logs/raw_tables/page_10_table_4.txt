@@ -1,0 +1,53 @@
+Page: 10, Table: 4, Caption: 8.4
+
+4031 | S6MultiBlockInquire | Bo | EC | Bo 0 | Bo 1 | Bo 0 | Enable or disable the usage of S6F5
+multi-block inquire (MBI) messages.
+1=send MBI 0=don't send MBI.
+4032 | SpoolingWaitDelayActivation | U1 | EC | U1 0 | U1 2 | U1 0 | 0=Spooling is not activated when the
+WAIT CRA to WAIT DELAY
+communication state machine
+transition occurs; 1=Spooling is
+activated anytime the WAIT CRA to
+WAIT DELAY communication state
+machine transition occurs and
+spooling is enabled (this establishes
+strict compliance with E30);
+2=Spooling is activated after the
+second WAIT CRA to WAIT
+DELAY communication state
+machine trasition (this allows the
+host time to establish communication
+without aggressively activating
+spooling).
+4036 | ExtendedTimeFormat | U1 | EC | U1 0 | U1 1 | U1 0 | The format applied to report time
+values when TimeFormat EC is 2.
+0=UTC (default setting; PV2
+compliant); 1=local time with time
+zone offset.
+301005 | VariableReportingStyle | U4 | EC | U4 0 | U4
+4294967295 | U4 0 | S1F3 and S2F23 VID tolerance
+where 0 = Strict compliance with
+SEMI standards where only SVID
+are allowed; 1 = Allow any variable
+type (SV; DV; or EC) to be reported.
+301008 | TraceReportMultiBlock | U4 | EC | U4 0 | U4
+4294967295 | U4 1 | Allow Trace Reports with total data
+size that is larger than 244 bytes (0 =
+do not allow large reports. 1[default]
+= allow large trace reports). It is
+recommended to leave this at U4 1.
+Set to 0 to help avoid unintentional
+performance degradation from trace
+reports larger than 244 bytes.
+301010 | SpoolingActivatedEventOption1 | U1 | EC | U1 0 | U1 255 | U1 1 | Options for sending
+SpoolingActivated GEM Collection
+Event (0=trigger event when the
+Spooling state changes to ACTIVE;
+1=trigger event before any queued
+messages have been spooled).
+301013 | SupportPV2 | U1 | EC | U1 0 | U1 255 | U1 0 | 0 = default behavior - GEM
+functionality; 1 = enable PV2
+behavior. Causes CIMConnect not to
+send Event reports for Set/Clear
+Alarm events if the Alarm is not
+enabled.
